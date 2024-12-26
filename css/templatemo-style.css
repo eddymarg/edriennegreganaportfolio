@@ -335,6 +335,12 @@ hr {
   height: auto;
   border-radius: 20px;
 }
+.fluid-img2 {
+  width: 100%;
+  display: block;
+  height: auto;
+  border-radius: 20px;
+}
 /* END PORTFOLIO */
 
 /* START RESUME */
