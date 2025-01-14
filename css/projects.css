@@ -159,16 +159,16 @@
 
 /* ASIS */
 .asis-hero {
-    background-image: linear-gradient(to top,rgba(185, 246, 217, 1), rgba(185, 246, 217, 0.5)),url(../images/projects/accenture.png);
+    background-image: linear-gradient(to top,rgba(48,180,201, 1), rgba(48,180,201, 0.1)),url(../images/projects/accenture.png);
 }
 
-.asis-black { color: #282828; }
-.asis-red { color: #fe6454; }
-.asis-background-btm { background-color: #b9f6d9; }
-.asis-background-box { background-color: #fe6454; }
+.asis-black { color: #3c486a; }
+.asis-red { color: #179aaf; }
+.asis-background-btm { background-color: #e5f3fd; }
+.asis-background-box { background-color: #179aaf; }
 
 .asis-view-more-btn {
-    background: #fe6454;
+    background: #179aaf;
     color: #ffffff;
     border: none;
     border-radius: 20px;
@@ -182,7 +182,7 @@
 
 .asis-view-more-btn:hover {
     background: #ffffff;
-    color: #fe6454;
+    color: #179aaf;
 }
 
 /* WANDERLUST  */
