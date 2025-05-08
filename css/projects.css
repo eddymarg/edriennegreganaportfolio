@@ -1,4 +1,5 @@
 /* FONT */
+
 .large-title { font-size: 90px; }
 
 .medium-title {
@@ -41,6 +42,7 @@
 }
 
 .btm-list li, .middle-list li{ padding: 0.5rem; }
+  
 /* FONT END */
 
 /* IMAGES */
@@ -352,3 +354,5 @@
       background-attachment: scroll;
     }
   }
+
+/* POSTCARD */

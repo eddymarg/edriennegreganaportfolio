@@ -7,21 +7,17 @@
 	<meta name="keywords" content="">
 	<meta name="description" content="">
 	<!-- SITE TITLE -->
-	<title>Ultra Profile HTML5 Template</title>
+	<title>Edrienne Gregana Portfolio</title>
 
 	<!-- STYLESHEETS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/templatemo-style.css">
+	<link rel="stylesheet" href="css/envelope.css">
 	<link href="css/lightbox.css" rel="stylesheet" />
 	<link href='//fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
-<!-- 
+	<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
 
-Ultra Profile
-
-https://templatemo.com/tm-464-ultra-profile
-
--->
 </head>
 <body data-spy="scroll" data-target="#rock-navigation">
 	<!-- START NAVIGATION -->
@@ -53,21 +49,45 @@ https://templatemo.com/tm-464-ultra-profile
 
 	<!-- START HOME -->
 	<section id="home" class="templatemo-home">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-2 col-sm-1"></div>
-				<div class="col-md-8 col-sm-10">
-					<!-- <h1 class="tm-home-title"><strong></strong></h1> -->
-					<img src="images/name.png" alt="Edrienne Gregana in metallic font" width="900vw" height="auto">
-					<h2 class="tm-home-subtitle">Software Developer</h2>
-					<p>I am a professional <strong>software developer</strong> with a passion for <strong>product design</strong> creating unique responsive designs for <strong>web</strong> applications.</p>
-					<a href="#portfolio" class="btn btn-default smoothScroll tm-view-more-btn">Let's Begin</a>
-				</div>
-				<div class="col-md-2 col-sm-1"></div>
+		<div class="container envelope">
+			<button class="heart" id="openEnvelope" aria-label="Open Envelope">
+				<span class="heart-text">Open Me</span>
+			</button>
+			<div class="envelope-flap"></div>
+			<div class="envelope-folds">
+				<div class="envelope-left"></div>
+				<div class="envelope-right"></div>
+				<div class="envelope-bottom"></div>
+			</div>
+			<div class="container letter" id="letter">
+				<h3>Hi! I'm <span class="cursive"><strong>Edrienne Gregana</strong></span> <br></h3>
+				<p>I am a <strong>Software Developer</strong> with a strong passion for <strong>Frontend Development</strong> and bringing ideas to life through code. I love creating unique, thoughtful designs and turning them into responsive, interactive experiences that feel both magical and functional.</p>
+				<a href="#work" class="btn btn-default smoothScroll tm-view-more-btn">Learn about me!</a>
 			</div>
 		</div>
 	</section>
 	<!-- END HOME -->
+
+	<!-- START work -->
+	<section id="work" class="tm-padding-top-bottom-100">
+		<div class="container">
+			<div class="row" style="margin: 5rem 0 5rem 0;">
+				<div class="column">
+					<h2 class="title">My <strong>Latest Adventure</strong></h2>						
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<div class="work-wrapper">
+						<img src="images/DCP-Logo-Feature-Image.png" alt="Disney College Program Logo" width="70%" height="70%">
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<div class="work-wrapper">
+						<p>Big news! This fall, I'll be embarking on a magical adventure...I've been accepted into the Fall 2025 Disney College Program at Walt Disney World! 🎉<br> From being a lifelong Disney fan to now becoming part of the magic, I'm so excited to create unforgettable memories for guests from around the globe. Whether it's putting smiles on faces, sharing the joy of storytelling, or growing both personally and professionally, I'm beyond excited for what's ahead.<br>Let the magic begin✨🏰</p>
+					</div>
+				</div>
+		</div>
+	</section>
+	<!-- END work -->
 
 	<!-- START PORTFOLIO -->
 	<section id="portfolio" class="tm-portfolio">
@@ -331,6 +351,7 @@ https://templatemo.com/tm-464-ultra-profile
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/smoothscroll.js"></script>
+	<script src="js/envelope.js"></script>
 	<script src="js/jquery.nav.js"></script>
 	<script src="js/isotope.js"></script>
 	<script src="js/imagesloaded.min.js"></script>
