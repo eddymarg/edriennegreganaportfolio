@@ -164,7 +164,8 @@
 
 /* ASIS */
 .asis-hero {
-    background-image: linear-gradient(to top,rgba(48,180,201, 1), rgba(48,180,201, 0.1)),url(../images/projects/accenture.png);
+    background-image: linear-gradient(to top,rgb(229, 244, 247), rgba(48,180,201, 0.1)),url(../images/projects/accenture.png);
+    height: 100%;
 }
 
 .asis-black { color: #3c486a; }
@@ -179,15 +180,32 @@
     border-radius: 20px;
     font-size: 20px;
     font-weight: 700;
-    margin-top: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 15px 50px;
     -webkit-transition: all 0.6s ease-in;
             transition: all 0.6s ease-in;
-  }
+}
 
 .asis-view-more-btn:hover {
     background: #ffffff;
     color: #179aaf;
+}
+
+.asis-description {
+    width: 90%;
+}
+
+.ASIS-subtitle {
+    text-align: right;
+    font-weight: 500;
+    font-size: 25px;
+    margin: 5rem 15rem 0 0 ;
+}
+
+.ASIS-subtitle-content {
+    text-align: right;
+    margin: 1rem 15rem 0 0 ;
 }
 
 /* WANDERLUST  */
@@ -199,6 +217,51 @@
 .wanderlust-green { color: #4d6c40; }
 .wanderlust-background-btm { background-color: #d7cd62; }
 .wanderlust-background-box { background-color: #4d6c40; }
+
+.wanderlust-details-title, .sched-details-title {
+    font-size: 60px;
+    font-weight: 600;
+    padding: 2.5rem;
+    text-transform: uppercase;
+}
+
+.wanderlust-details-subtitle, .sched-details-subtitle {
+    text-align: left;
+    margin-left: 5rem;
+}
+
+.wander-color-1 {
+    background-color: #F3DAB2;
+    width: 100px;
+    height: 150px;
+    display: inline-block;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+.wander-color-2 {
+    background-color: #F0832C;
+    width: 100px;
+    height: 150px;
+    display: inline-block;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+.wander-color-3 {
+    background-color: #4D6640;
+    width: 100px;
+    height: 150px;
+    display: inline-block;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+.wander-color-4 {
+    background-color: #BCD7EA;
+    width: 100px;
+    height: 150px;
+    display: inline-block;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
 /* WANDERLUST END */
 
 /* SATURN */
@@ -219,6 +282,17 @@
     text-align: center;
     text-transform: uppercase;
     margin-top: 10rem;
+}
+
+.saturn-details-title {
+    font-size: 60px;
+    font-weight: 600;
+    padding: 2rem;
+    text-transform: uppercase;
+}
+
+.saturn-details-subtitle {
+    text-align: left;
 }
 
 .saturn-view-more-btn {
@@ -245,6 +319,42 @@
 .saturn-hero {
     background-image: linear-gradient(to top,rgba(243, 218, 178, 1), rgba(243, 218, 178, 0.5)),url(../images/projects/saturn.png);
 }
+
+.saturn-color-1 {
+    background-color: #B34705;
+    width: 100px;
+    height: 150px;
+    display: inline-block;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+
+.saturn-color-2 {
+    background-color: #C96EBD;
+    width: 100px;
+    height: 150px;
+    display: inline-block;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+
+.saturn-color-3 {
+    background-color: #DAC9E3;
+    width: 100px;
+    height: 150px;
+    display: inline-block;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+
+.saturn-detail-1 {
+    margin-left: 5rem;
+}
+
+.saturn-tools {
+    margin-right: 10rem;
+}
+
 /* SATURN END */
 
 /* SCHED */
@@ -274,6 +384,43 @@
 
 .sched-hero {
     background-image: linear-gradient(to top,rgba(243, 218, 178, 1), rgba(243, 218, 178, 0.5)),url(../images/projects/sched.png);
+}
+
+.sched-color-1 {
+    background-color: #49423E;
+    width: 100px;
+    height: 150px;
+    display: inline-block;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+
+.sched-color-2 {
+    background-color: #B1947B;
+    width: 100px;
+    height: 150px;
+    display: inline-block;
+    border-radius: 4px;
+    border: #CDBFB6 1px solid;
+    margin-right: 0.5rem;
+}
+
+.sched-color-3 {
+    background-color: #CDBFB6;
+    width: 100px;
+    height: 150px;
+    display: inline-block;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+
+.sched-color-4 {
+    background-color: #EDE7E3;
+    width: 100px;
+    height: 150px;
+    display: inline-block;
+    border-radius: 4px;
+    margin-right: 0.5rem;
 }
 /* SCHED END*/
 
@@ -495,4 +642,66 @@
     }
   }
 
-/* POSTCARD */
+/* ARBORETUM START */
+.arboretum-hero {
+    background-image: linear-gradient(to top, rgba(6, 64, 43, 0.5), rgba(255, 255, 255, 0.1)), url(../images/arb-group-photo.jpeg);
+}
+
+.arboretum-green { color: #06402B; }
+.arboretum-white { color: white}
+
+.arboretum-grid {
+    background: hsl(36, 100%, 99%);
+    width: 100%;
+    max-width: 1500px;
+    height: 1000px;
+    display: grid;
+    gap: 1vw;
+    margin-top: 5rem;
+    padding: 1vw;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "hero hero hero aside1 aside1 aside1"
+    "hero hero hero aside1 aside1 aside1"
+    "aside3 aside3 aside3 aside2 aside2 aside2"
+    "aside3 aside3 aside3 aside2 aside2 aside2"
+    "aside4 aside4 aside4 aside2 aside2 aside2"
+    "aside4 aside4 aside4 aside5 aside5 aside5";
+}
+
+.arboretum-grid .item:nth-child(1) {
+    grid-area: hero;
+}
+
+.arboretum-grid .item:nth-child(2) {
+    grid-area: aside1;
+    background-color: #90b27070;
+    justify-content: center;
+    padding: 2.5rem;
+}
+
+.arboretum-grid .item:nth-child(2) p {
+    margin-top: 6rem;
+}
+
+.arboretum-grid .item:nth-child(3) {
+    grid-area: aside2;
+}
+
+.arboretum-grid .item:nth-child(4) {
+    grid-area: aside3;
+    background-color: #5f835680;
+    padding: 2.5rem;
+}
+
+.arboretum-grid .item:nth-child(5) {
+    grid-area: aside4;
+}
+
+.arboretum-grid .item:nth-child(6) {
+    grid-area: aside5;
+    background-color: #769A6295;
+}
+
+/* END ARBORETUM */

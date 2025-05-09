@@ -371,7 +371,7 @@ hr {
 
 /* START ABOUT */
 .tm-about {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url('../images/about-me.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url('../images/abt-me.png');
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
