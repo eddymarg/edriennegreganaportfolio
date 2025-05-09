@@ -187,11 +187,19 @@
     transform: translate(-50%, -50%) scale(0.8);
 }
 
+.heart:hover {
+    background:
+    radial-gradient(circle at 60% 65%, pink 64%, #0000 65%) top left / 50% 50%,
+    radial-gradient(circle at 40% 65%, pink 64%, #0000 65%) top right / 50% 50%,
+    conic-gradient(from -45deg at 50% 85.5%, pink 90deg, #0000 0) bottom / 100% 50%;
+    background-repeat: no-repeat;
+}
+
 .heart-text {
     transform: translateY(-10px);
     display: block;
     color: var(--heart-text);
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: var(--letter-font);
 }
 
