@@ -5,11 +5,12 @@
 
 .large-title { font-size: 90px; }
 
+
 .medium-title {
     font-size: 50px;
     font-weight: 600;
     text-transform: uppercase;
-    text-align: right;
+    text-align: left;
     margin-top: 10rem;
 }
 
@@ -19,6 +20,14 @@
     text-transform: uppercase;
     text-align: center;
     padding: 2rem;
+}
+
+.medium-title-3 {
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: 15rem;
 }
 
 .small-title {
@@ -86,7 +95,11 @@
 
 /* MIDDLE SECTION */
 .middle-section { 
-    margin-bottom: 5rem; 
+    margin-bottom: 2rem; 
+    overflow: hidden;
+}
+
+.middle-section-1 { 
     overflow: hidden;
 };
 
@@ -161,6 +174,37 @@
     border-radius: 20px;
 }
 /* BOTTOM SECTION END */
+
+/* SoundBites */
+.soundBites {
+    background-color: white;
+}
+
+.soundBites-hero {
+    background-image: url("../images/projects/SoundBites-bg.png");
+    border-bottom: 1.5px #EF233C solid;
+    box-shadow: 0 1px 30px #EF233C;
+}
+
+.soundBites-Mockup {
+    margin-top: 4rem;
+}
+
+.soundBites-links {
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+}
+
+.soundBites-red {
+    color: #EF233C;
+}
+
+.soundBites-darkRed {
+    color: #75111d;
+}
+
+
 
 /* ASIS */
 .asis-hero {
