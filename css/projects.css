@@ -117,10 +117,19 @@
     text-align: center;
 }
 
-.pic-wrapper {
+.limbit-container {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.limbit-column {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.limbit-row {
+    padding: 1rem;
 }
 
 
@@ -128,6 +137,10 @@
     /* margin: 4rem 0 0 0 ; */
     width: 100%;
     margin-top: 20px;
+}
+
+.row-1 {
+    margin: 1rem;
 }
 
 #column-1 {
@@ -497,6 +510,7 @@
     text-transform: uppercase;
     text-align: left;
     margin-top: 5rem;
+    margin-left: 3rem;
 }
 
 .project-item {
