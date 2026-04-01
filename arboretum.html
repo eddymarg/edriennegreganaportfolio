@@ -1,100 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="">
-	<meta name="description" content="">
-	<!-- SITE TITLE -->
-	<title>Arboretum Page</title>
+	<title>UCF Arboretum — Edrienne Gregana</title>
 
-	<!-- STYLESHEETS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/templatemo-style.css">
-	<link rel="stylesheet" href="css/projects.css">
-	<link href='//fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
-</head>  
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/arboretum.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Pixelify+Sans:wght@400..700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-<body data-spy="scroll" data-target="#rock-navigation" style="background-color: white;">
-    <!-- START NAVIGATION -->
-	<div class="navbar navbar-default bs-dos-nav navbar-fixed-top sticky-navigation" role="navigation">
-		<div class="container">
+	<!-- Nav -->
+	<nav class="navbar arb-nav">
+		<a href="index.html" class="nav-brand" aria-label="Back to portfolio">
+			<img src="images/EG_logo.png" alt="EG" class="nav-logo">
+		</a>
+		<ul class="nav-links">
+			<li><a href="#about">About</a></li>
+			<li><a href="#work">My Work</a></li>
+			<li><a href="#photos">Photos</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
 
-			<div class="navbar-header">
-				<button class="navbar-toggle" data-toggle="collapse" data-target="#rock-navigation">
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-				</button>
-				<a href="index.html#portfolio" class="navbar-brand">Edrienne Gregana</a>
-			</div>
-			<nav class="collapse navbar-collapse" id="rock-navigation">
-				<ul class="nav navbar-nav navbar-right main-navigation text-uppercase">
-					<li><a href="index.html#portfolio" class="smoothScroll">Home</a></li>
-					<!-- <li><a href="#work" class="smoothScroll">My Work</a></li> -->
-					<li><a href="#hero" class="smoothScroll">Problem</a></li>
-					<li><a href="#middle" class="smoothScroll">Solution</a></li>
-					<li><a href="#bottom" class="smoothScroll">Details</a></li>
-				</ul>
-			</nav>
+	<!-- ── Hero ── -->
+	<section class="arb-hero">
+		<div class="arb-hero-bg">
+			<div class="arb-blob arb-blob-1"></div>
+			<div class="arb-blob arb-blob-2"></div>
+			<div class="arb-blob arb-blob-3"></div>
 		</div>
-	</div>
-	<!-- END NAVIGATION -->
-
-	<!-- START HERO -->
-	<section id="hero" class="arboretum-hero hero">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-2 col-sm-1"></div>
-				<div class="col-md-8 col-sm-10">
-					<h1 class="tm-home-title"><strong></strong></h1>
-					<h1 class="tm-home-subtitle large-title arboretum-green">Arboretum</h1>
-					<p class="arboretum-white">The Arboretum is a student-led agricultural initiative that offers a space for students to engage with and learn about the natural environment. During my time with the Arboretum, I was responsible for managing and implementing updates to the organization's website. As part of the Media & Marketing team, I ensured the site's content, design, and functionality accurately reflected ongoing projects and events, helping to promote environmental education and outreach across campus.</p>
+		<div class="arb-hero-content">
+			<span class="pixelify-sans-regular arb-eyebrow">Media &amp; Marketing Team</span>
+			<h1 class="mea-culpa-regular arb-title">UCF Arboretum</h1>
+			<p class="tinos-regular arb-tagline">A student-led agricultural initiative at UCF where I learned to bridge design, development, and environmental storytelling.</p>
+			<div class="arb-meta">
+				<div class="arb-meta-item">
+					<span class="pixelify-sans-regular arb-meta-label">Role</span>
+					<span class="tinos-regular arb-meta-value">Web &amp; Marketing</span>
 				</div>
-				<div class="col-md-2 col-sm-1"></div>
+				<div class="arb-meta-divider"></div>
+				<div class="arb-meta-item">
+					<span class="pixelify-sans-regular arb-meta-label">Type</span>
+					<span class="tinos-regular arb-meta-value">Student Organization</span>
+				</div>
+				<div class="arb-meta-divider"></div>
+				<div class="arb-meta-item">
+					<span class="pixelify-sans-regular arb-meta-label">Tools</span>
+					<span class="tinos-regular arb-meta-value">WordPress · Photography</span>
+				</div>
 			</div>
 		</div>
 	</section>
-	<!-- END HERO -->
-	<!-- MIDDLE SECTION -->
-	 <section id="middle" class="middle-section" style="margin-bottom: 15rem;">
-		<div class="picbox-wrapper" style="margin: 0;">
-            <div class="arboretum-grid">
-				<!-- hero -->
-				<div class="item"> 
-					<img src="images/projects/arb3.jpeg">
+
+	<!-- ── About ── -->
+	<section class="arb-section" id="about">
+		<div class="arb-inner">
+			<div class="arb-two-col">
+				<div>
+					<span class="pixelify-sans-regular arb-label">The Organization</span>
+					<h2 class="mea-culpa-regular arb-section-title">What is the Arboretum?</h2>
+					<p class="tinos-regular arb-body">The UCF Arboretum is a student-led agricultural initiative that offers a space for students to engage with and learn about the natural environment. Through hands-on programming, events, and outreach, the organization promotes environmental education across campus.</p>
+					<p class="tinos-regular arb-body">As part of the Media &amp; Marketing team, I was responsible for managing and implementing updates to the organization's website. Ensuring content, design, and functionality accurately reflected ongoing projects and events.</p>
 				</div>
-				<!-- 1 -->
-				<div class="item">
-                    <p>One of the major projects I led during my time at the Arboretum was facilitating the digital integration of the Arboretum and UCF Facilities departments into a unified entity known as Arboretum & Sustainability Initiatives. This transition required a complete redesign of the existing website to reflect the expanded mission and incorporate new content provided by the Facilties team. Through ongoing meetings, collaboration, and coordination with stakeholders from both sides, I helped manage the merging of information and ensured a smooth transition on the organization's WordPress site.</p>
-                </div>
-				<!-- 2 -->
-				<div class="item">
-					<img src="images/projects/arb1.jpeg">
+				<div class="arb-cover-wrap">
+					<img src="images/arb-group-photo.jpeg" alt="UCF Arboretum group photo" class="arb-cover-img">
 				</div>
-				<!-- 3 -->
-				<div class="item">
-                    <p>In addition to my work on the website, I also contributed to the Arboretum's marketing efforts by offering my photography skills and creative input for various events and campaigns. </p>
-                </div>
-				<!-- 4 -->
-				<div class="item">
-					<img src="images/projects/arb2.jpeg">
-				</div>
-				<!-- 5 -->
-				<div class="item"></div>
 			</div>
 		</div>
-	 </section>
-	<!-- MIDDLE SECTION END -->
+	</section>
 
-</body> 
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src="js/jquery.nav.js"></script>
-<script src="js/isotope.js"></script>
-<script src="js/imagesloaded.min.js"></script>
-<script src="js/custom.js"></script>
+	<!-- ── My Work ── -->
+	<section class="arb-section arb-alt" id="work">
+		<div class="arb-inner">
+			<span class="pixelify-sans-regular arb-label">What I Did</span>
+			<h2 class="mea-culpa-regular arb-section-title">My Contributions</h2>
+			<div class="arb-work-grid">
+
+				<div class="arb-work-card">
+					<img src="images/projects/arb3.jpeg" alt="Arboretum team">
+					<div class="arb-work-text">
+						<h3 class="tinos-bold">Website Redesign &amp; Digital Integration</h3>
+						<p class="tinos-regular">One of the major projects I led was facilitating the digital integration of the Arboretum and UCF Facilities departments into a unified entity, Arboretum &amp; Sustainability Initiatives. This required a complete merging of the existing WordPress site to reflect the expanded mission and incorporate new content from the Facilities team. Through ongoing meetings with stakeholders from both departments, I managed the merging of content and ensured a smooth transition across the site.</p>
+					</div>
+				</div>
+
+				<div class="arb-work-card arb-work-card-reverse">
+					<img src="images/projects/arb2.jpeg" alt="Arboretum event">
+					<div class="arb-work-text">
+						<h3 class="tinos-bold">Marketing &amp; Photography</h3>
+						<p class="tinos-regular">In addition to my web work, I contributed to the Arboretum's marketing efforts by offering my photography skills and creative input for events and campaigns. Capturing moments from events helped give the organization a stronger visual presence and made it easier to connect with students across campus.</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- ── Photos ── -->
+	<section class="arb-section" id="photos">
+		<div class="arb-inner">
+			<span class="pixelify-sans-regular arb-label">Behind the Scenes</span>
+			<h2 class="mea-culpa-regular arb-section-title">In the Field</h2>
+		</div>
+		<div class="arb-single-photo">
+			<img src="images/projects/arb1.jpeg" alt="Arboretum night event">
+		</div>
+	</section>
+
+	<!-- ── Contact ── -->
+	<section class="contact-section arb-contact" id="contact">
+		<div class="contact-inner">
+			<h2 class="mea-culpa-regular">Reach Out</h2>
+			<p class="tinos-regular contact-sub">Want to know more about my time at the Arboretum, or just want to connect?</p>
+			<form class="contact-form" action="#" method="POST">
+				<div class="form-row">
+					<div class="form-group">
+						<label class="tinos-regular" for="arb-name">Name</label>
+						<input class="tinos-regular" type="text" id="arb-name" name="name" placeholder="Your name" required>
+					</div>
+					<div class="form-group">
+						<label class="tinos-regular" for="arb-email">Email</label>
+						<input class="tinos-regular" type="email" id="arb-email" name="email" placeholder="your@email.com" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="tinos-regular" for="arb-message">Message</label>
+					<textarea class="tinos-regular" id="arb-message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+				</div>
+				<div class="form-submit">
+					<button type="submit" class="btn-outline pixelify-sans-regular arb-btn">send it</button>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<script src="js/arboretum.js"></script>
+</body>
 </html>

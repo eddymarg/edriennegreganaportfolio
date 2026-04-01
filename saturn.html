@@ -1,120 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="">
-	<meta name="description" content="">
-	<!-- SITE TITLE -->
-	<title>Saturn Page</title>
+	<title>Saturn — Edrienne Gregana</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/project.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Pixelify+Sans:wght@400..700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<style>
+		:root {
+			--proj-accent:       #6b4faa;
+			--proj-accent-mid:   #9070c8;
+			--proj-accent-light: #c8b8e8;
+			--proj-bg:           #f5f2fc;
+			--proj-bg-alt:       #ece6f8;
+			--proj-text:         #1a1228;
+			--proj-muted:        #5a4878;
+		}
+	</style>
+</head>
+<body>
 
-	<!-- STYLESHEETS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/templatemo-style.css">
-	<link rel="stylesheet" href="css/projects.css">
-	<link href='//fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
-</head>  
+	<!-- Nav -->
+	<nav class="navbar proj-nav">
+		<a href="index.html" class="nav-brand" aria-label="Back to portfolio">
+			<img src="images/EG_logo.png" alt="EG" class="nav-logo">
+		</a>
+		<ul class="nav-links">
+			<li><a href="#overview">Overview</a></li>
+			<li><a href="#work">Features</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
 
-<body data-spy="scroll" data-target="#rock-navigation">
-    <!-- START NAVIGATION -->
-	<div class="navbar navbar-default bs-dos-nav navbar-fixed-top sticky-navigation" role="navigation">
-		<div class="container">
-
-			<div class="navbar-header">
-				<button class="navbar-toggle" data-toggle="collapse" data-target="#rock-navigation">
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-				</button>
-				<a href="index.html#portfolio" class="navbar-brand">Edrienne Gregana</a>
-			</div>
-			<nav class="collapse navbar-collapse" id="rock-navigation">
-				<ul class="nav navbar-nav navbar-right main-navigation text-uppercase">
-					<li><a href="index.html#portfolio" class="smoothScroll">Home</a></li>
-					<!-- <li><a href="#work" class="smoothScroll">My Work</a></li> -->
-					<li><a href="#hero" class="smoothScroll">Problem</a></li>
-					<li><a href="#middle" class="smoothScroll">Solution</a></li>
-					<li><a href="#bottom" class="smoothScroll">Details</a></li>
-				</ul>
-			</nav>
+	<!-- Hero -->
+	<section class="proj-hero">
+		<div class="proj-hero-bg">
+			<div class="proj-blob proj-blob-1"></div>
+			<div class="proj-blob proj-blob-2"></div>
+			<div class="proj-blob proj-blob-3"></div>
 		</div>
+		<div class="proj-hero-content">
+			<span class="pixelify-sans-regular proj-eyebrow">Personal Project · React</span>
+			<h1 class="mea-culpa-regular proj-title">Saturn</h1>
+			<p class="tinos-regular proj-tagline">A space-themed AI search platform — because searching should feel like an adventure, not a chore.</p>
+			<div class="proj-meta">
+				<div class="proj-meta-item">
+					<span class="pixelify-sans-regular proj-meta-label">Role</span>
+					<span class="tinos-regular proj-meta-value">Designer &amp; Developer</span>
+				</div>
+				<div class="proj-meta-divider"></div>
+				<div class="proj-meta-item">
+					<span class="pixelify-sans-regular proj-meta-label">Platform</span>
+					<span class="tinos-regular proj-meta-value">Web (React)</span>
+				</div>
+				<div class="proj-meta-divider"></div>
+				<div class="proj-meta-item">
+					<span class="pixelify-sans-regular proj-meta-label">Tools</span>
+					<span class="tinos-regular proj-meta-value">Figma · React · Gemini API</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Cover -->
+	<div class="proj-cover-banner">
+		<img src="images/projects/saturn.png" alt="Saturn search platform">
 	</div>
-	<!-- END NAVIGATION -->
 
-	<!-- START HERO -->
-	<section id="hero" class="saturn-hero hero">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-2 col-sm-1"></div>
-				<div class="col-md-8 col-sm-10">
-					<h1 class="tm-home-title"><strong></strong></h1>
-					<h1 class="tm-home-subtitle saturn-orange large-title">Saturn</h1>
-					<p class="saturn-orange">While platforms like ChatGPT and Gemini are undeniably powerful, they felt a bit impersonal and lacked the sense of fun and creativity I was looking for. To change that and to challenge myself to learn React.js I created my own space-themed search platform inspired by Google Gemini. I customized the theming to reflect my personal style and design preferences, turning the project into both a learning experience and a creative outlet.</p>
-                    <a href="https://saturn-mr7ljeyd5-mariegreganaegmailcoms-projects.vercel.app/" target="_blank" class="btn btn-default smoothScroll saturn-view-more-btn">Try it Out</a>
-				</div>
-				<div class="col-md-2 col-sm-1"></div>
+	<!-- Overview -->
+	<section class="proj-section" id="overview">
+		<div class="proj-inner">
+			<span class="pixelify-sans-regular proj-label">The Idea</span>
+			<h2 class="mea-culpa-regular proj-section-title">Why Saturn?</h2>
+			<p class="tinos-regular proj-body">Platforms like ChatGPT and Gemini are powerful but they felt impersonal. I wanted something with a sense of fun and a design that felt like mine. So I built Saturn — a space-themed AI search platform built on top of the Gemini API, designed and developed entirely from scratch in React.</p>
+			<p class="tinos-regular proj-body">Beyond the creative challenge, this was a learning project. Building Saturn gave me hands-on experience integrating an AI API, managing chat state in React, and thinking carefully about UI/UX for conversational interfaces.</p>
+			<div class="proj-cta-row">
+				<a href="https://saturn-mr7ljeyd5-mariegreganaegmailcoms-projects.vercel.app/" target="_blank" class="btn-outline pixelify-sans-regular proj-btn">Try it Out</a>
 			</div>
 		</div>
 	</section>
-	<!-- END HERO -->
-	<!-- MIDDLE SECTION -->
-	 <section id="middle" class="middle-section">
-		<div class="container">
-			<div class="col-md-6">
-				<div>
-					<h4 class="saturn-md-title saturn-orange">Solution</h4>
-					<ul class="btm-list saturn-orange">
-						<li>AI Search Bot</li>
-						<li>Chat History</li>
-						<li>Recommendations based on activity and popularity</li>
-					</ul>
+
+	<!-- Features -->
+	<section class="proj-section proj-alt" id="work">
+		<div class="proj-inner">
+			<span class="pixelify-sans-regular proj-label">What I Built</span>
+			<h2 class="mea-culpa-regular proj-section-title">Features.</h2>
+			<div class="proj-features">
+				<div class="proj-feature-card">
+					<h3 class="tinos-bold">AI Search via Gemini</h3>
+					<p class="tinos-regular">Integrated Google's Gemini API to power the search and conversational functionality, handling prompt construction and response parsing within React.</p>
 				</div>
-				<div>
-					<h5 class="saturn-sm-title saturn-orange">Future Implementation</h5>
-					<ul class="btm-list saturn-orange">
-						<li>Add functionality to add new chat</li>
-						<li>Implement suggested questions</li>
-						<li>Document scanning/photo uploading</li>
-					</ul>
+				<div class="proj-feature-card">
+					<h3 class="tinos-bold">Chat History</h3>
+					<p class="tinos-regular">Built a session-based chat history so users can scroll back through their conversation without losing context — a core UX need for any AI chat interface.</p>
 				</div>
-			</div>
-			<div class="col-md-6">
-				<img src="images/projects/saturn-screen.png" alt="screens and computer mockup of saturn app" class="mockup">
-			</div>
-		</div>
-	 </section>
-	<!-- MIDDLE SECTION END -->
-	<!-- BOTTOM SECTION -->
-	<section id="bottom" class="saturn-background-btm">
-		<h2 class="saturn-details-title white">Details</h2>
-		<div class="box-wrapper">
-			<div class="col detail-box saturn-detail-1 saturn-details-subtitle white">
-				<h3 class=""><em>Color Palette</em></h3>
-				<div class="col saturn-color-1"></div>
-				<div class="col saturn-color-2"></div>
-				<div class="col saturn-color-3"></div>
-			</div>
-			<div class="col detail-box white">
-				<h3 class="saturn-details-subtitle"><em>Tools Used</em></h3>
-				<div class="saturn-tools">
-					<img src="images/projects/Figma Icon (Full-color).png" alt="Figma logo" width="25%" >
-					<img src="images/projects/vscode.png" alt="Vscode logo" width="15%" style="margin-right: 2rem;">
-					<img src="images/projects/react-logo.png" alt="React logo" width="15%" style="margin-right: 2rem;">
-					<img src="images/projects/gemini-color.png" alt="Gemini logo" width="15%">
+				<div class="proj-feature-card">
+					<h3 class="tinos-bold">Space-Themed UI</h3>
+					<p class="tinos-regular">Designed the full interface in Figma before writing a line of code — establishing the dark palette, type hierarchy, and space-inspired component system that makes Saturn feel distinct.</p>
+				</div>
+				<div class="proj-feature-card">
+					<h3 class="tinos-bold">Activity-Based Recommendations</h3>
+					<p class="tinos-regular">Saturn surfaces contextual recommendations based on prior queries, giving users a more personalized and discoverable experience than a standard search box.</p>
 				</div>
 			</div>
 		</div>
-		<!-- </div> -->
 	</section>
-	<!-- BOTTOM SECTION END -->
+
+	<!-- Contact -->
+	<section class="contact-section proj-contact" id="contact">
+		<div class="contact-inner">
+			<h2 class="mea-culpa-regular">Reach Out</h2>
+			<p class="tinos-regular contact-sub">Have a question about this project, or just want to connect?</p>
+			<form class="contact-form" action="#" method="POST">
+				<div class="form-row">
+					<div class="form-group">
+						<label class="tinos-regular" for="sat-name">Name</label>
+						<input class="tinos-regular" type="text" id="sat-name" name="name" placeholder="Your name" required>
+					</div>
+					<div class="form-group">
+						<label class="tinos-regular" for="sat-email">Email</label>
+						<input class="tinos-regular" type="email" id="sat-email" name="email" placeholder="your@email.com" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="tinos-regular" for="sat-message">Message</label>
+					<textarea class="tinos-regular" id="sat-message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+				</div>
+				<div class="form-submit">
+					<button type="submit" class="btn-outline pixelify-sans-regular proj-btn">send it</button>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<script src="js/project.js"></script>
 </body>
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src="js/jquery.nav.js"></script>
-<script src="js/isotope.js"></script>
-<script src="js/imagesloaded.min.js"></script>
-<script src="js/custom.js"></script>
 </html>

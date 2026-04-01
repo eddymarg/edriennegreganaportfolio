@@ -1,118 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="">
-	<meta name="description" content="">
-	<!-- SITE TITLE -->
-	<title>Wanderlust Page</title>
+	<title>Wanderlust — Edrienne Gregana</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/project.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Pixelify+Sans:wght@400..700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<style>
+		:root {
+			--proj-accent:       #2a7c70;
+			--proj-accent-mid:   #48a090;
+			--proj-accent-light: #a0d0c8;
+			--proj-bg:           #f2faf8;
+			--proj-bg-alt:       #e0f5f0;
+			--proj-text:         #0a2020;
+			--proj-muted:        #306058;
+		}
+	</style>
+</head>
+<body>
 
-	<!-- STYLESHEETS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/templatemo-style.css">
-	<link rel="stylesheet" href="css/projects.css">
-	<link href='//fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
-</head>  
+	<!-- Nav -->
+	<nav class="navbar proj-nav">
+		<a href="index.html" class="nav-brand" aria-label="Back to portfolio">
+			<img src="images/EG_logo.png" alt="EG" class="nav-logo">
+		</a>
+		<ul class="nav-links">
+			<li><a href="#overview">Overview</a></li>
+			<li><a href="#work">Features</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
 
-<body data-spy="scroll" data-target="#rock-navigation">
-    <!-- START NAVIGATION -->
-	<div class="navbar navbar-default bs-dos-nav navbar-fixed-top sticky-navigation" role="navigation">
-		<div class="container">
-
-			<div class="navbar-header">
-				<button class="navbar-toggle" data-toggle="collapse" data-target="#rock-navigation">
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-				</button>
-				<a href="index.html#portfolio" class="navbar-brand">Edrienne Gregana</a>
-			</div>
-			<nav class="collapse navbar-collapse" id="rock-navigation">
-				<ul class="nav navbar-nav navbar-right main-navigation text-uppercase">
-					<li><a href="index.html#portfolio" class="smoothScroll">Home</a></li>
-					<!-- <li><a href="#work" class="smoothScroll">My Work</a></li> -->
-					<li><a href="#hero" class="smoothScroll">Problem</a></li>
-					<li><a href="#middle" class="smoothScroll">Solution</a></li>
-					<li><a href="#bottom" class="smoothScroll">Details</a></li>
-				</ul>
-			</nav>
+	<!-- Hero -->
+	<section class="proj-hero">
+		<div class="proj-hero-bg">
+			<div class="proj-blob proj-blob-1"></div>
+			<div class="proj-blob proj-blob-2"></div>
+			<div class="proj-blob proj-blob-3"></div>
 		</div>
+		<div class="proj-hero-content">
+			<span class="pixelify-sans-regular proj-eyebrow">Team Project · Mobile App</span>
+			<h1 class="mea-culpa-regular proj-title">Wanderlust</h1>
+			<p class="tinos-regular proj-tagline">A travel planning app that takes the stress out of vacation itineraries — find, organize, and go.</p>
+			<div class="proj-meta">
+				<div class="proj-meta-item">
+					<span class="pixelify-sans-regular proj-meta-label">Role</span>
+					<span class="tinos-regular proj-meta-value">Designer &amp; Developer</span>
+				</div>
+				<div class="proj-meta-divider"></div>
+				<div class="proj-meta-item">
+					<span class="pixelify-sans-regular proj-meta-label">Platform</span>
+					<span class="tinos-regular proj-meta-value">iOS (Swift)</span>
+				</div>
+				<div class="proj-meta-divider"></div>
+				<div class="proj-meta-item">
+					<span class="pixelify-sans-regular proj-meta-label">Tools</span>
+					<span class="tinos-regular proj-meta-value">Figma · Xcode · Swift</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Cover -->
+	<div class="proj-cover-banner">
+		<img src="images/projects/wanderlust.png" alt="Wanderlust travel app">
 	</div>
-	<!-- END NAVIGATION -->
 
-	<!-- START HERO -->
-	<section id="hero" class="wanderlust-hero hero">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-2 col-sm-1"></div>
-				<div class="col-md-8 col-sm-10">
-					<h1 class="tm-home-title"><strong></strong></h1>
-					<h1 class="tm-home-subtitle wanderlust-green large-title">Wanderlust</h1>
-					<p class="wanderlust-green">A travel planning app designed to ease the stress of creating vacation itineraries. With the rising interest in travel, my mobile app development team set out to build a platform that helps users discover and organize activities all in one place.</p>
+	<!-- Overview -->
+	<section class="proj-section" id="overview">
+		<div class="proj-inner">
+			<span class="pixelify-sans-regular proj-label">The Problem</span>
+			<h2 class="mea-culpa-regular proj-section-title">Travel planning is scattered.</h2>
+			<p class="tinos-regular proj-body">Planning a trip usually means juggling tabs — one for flights, one for hotels, another for things to do, a separate note for the itinerary. My mobile dev team set out to consolidate that experience into one focused app for activity discovery and trip organization.</p>
+			<p class="tinos-regular proj-body">Wanderlust lets users filter destinations by country, search for specific cities, and browse activity recommendations — all in one place, without the tab chaos.</p>
+		</div>
+	</section>
+
+	<!-- Features -->
+	<section class="proj-section proj-alt" id="work">
+		<div class="proj-inner">
+			<span class="pixelify-sans-regular proj-label">What I Built</span>
+			<h2 class="mea-culpa-regular proj-section-title">Features.</h2>
+			<div class="proj-features">
+				<div class="proj-feature-card">
+					<h3 class="tinos-bold">Country Filtering</h3>
+					<p class="tinos-regular">Users can filter destinations by country, narrowing down the discovery experience to a specific region before diving into city-level planning.</p>
 				</div>
-				<div class="col-md-2 col-sm-1"></div>
+				<div class="proj-feature-card">
+					<h3 class="tinos-bold">City Search</h3>
+					<p class="tinos-regular">A search function lets users jump directly to a specific city, pulling up relevant activities and highlights without browsing through every option.</p>
+				</div>
+				<div class="proj-feature-card">
+					<h3 class="tinos-bold">Activity Recommendations</h3>
+					<p class="tinos-regular">The app surfaces activity recommendations ranked by popularity and category, giving travelers a curated starting point instead of a blank page.</p>
+				</div>
+				<div class="proj-feature-card">
+					<h3 class="tinos-bold">Roadmap: In-App Itinerary Planning</h3>
+					<p class="tinos-regular">The next phase adds direct itinerary creation within the app — letting users save activities, map them to days, and export or share their plan with travel companions.</p>
+				</div>
 			</div>
 		</div>
 	</section>
-	<!-- END HERO -->
-	<!-- MIDDLE SECTION -->
-	 <section id="middle" class="middle-section">
-		<div class="container">
-			<div class="col-md-6">
-				<div>
-					<h4 class="medium-title wanderlust-green">Solution</h4>
-					<ul class="list wanderlust-green">
-						<li>Filtering by country</li>
-						<li>Country/city search function</li>
-						<li>Recommendations based on activity and popularity</li>
-					</ul>
+
+	<!-- Contact -->
+	<section class="contact-section proj-contact" id="contact">
+		<div class="contact-inner">
+			<h2 class="mea-culpa-regular">Reach Out</h2>
+			<p class="tinos-regular contact-sub">Have a question about this project, or just want to connect?</p>
+			<form class="contact-form" action="#" method="POST">
+				<div class="form-row">
+					<div class="form-group">
+						<label class="tinos-regular" for="wl-name">Name</label>
+						<input class="tinos-regular" type="text" id="wl-name" name="name" placeholder="Your name" required>
+					</div>
+					<div class="form-group">
+						<label class="tinos-regular" for="wl-email">Email</label>
+						<input class="tinos-regular" type="email" id="wl-email" name="email" placeholder="your@email.com" required>
+					</div>
 				</div>
-				<div>
-					<h5 class="small-title wanderlust-green">Future Implementation</h5>
-					<ul class="list wanderlust-green">
-						<li>Recommendation sharing with friends</li>
-						<li>in-app itinerary planning</li>
-						<li>AI suggested plan</li>
-					</ul>
+				<div class="form-group">
+					<label class="tinos-regular" for="wl-message">Message</label>
+					<textarea class="tinos-regular" id="wl-message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
 				</div>
-			</div>
-			<div class="col-md-6">
-				<img src="images/projects/wanderlust-phone.png" alt="screens and phone mockup of wanderlust app" class="mockup">
-			</div>
+				<div class="form-submit">
+					<button type="submit" class="btn-outline pixelify-sans-regular proj-btn">send it</button>
+				</div>
+			</form>
 		</div>
-	 </section>
-	<!-- MIDDLE SECTION END -->
-	<!-- BOTTOM SECTION -->
-	<section id="bottom" class="wanderlust-background-btm">
-		<h2 class="wanderlust-details-title white">Details</h2>
-		<div class="box-wrapper">
-			<div id="palette" class="col detail-box white">
-				<h3 class="wanderlust-details-subtitle"><em>Color Palette</em></h3>
-				<div class="col wander-color-1"></div>
-				<div class="col wander-color-2"></div>
-				<div class="col wander-color-3"></div>
-				<div class="col wander-color-4"></div>
-			</div>
-			<div id="tool" class="col detail-box saturn-tools white">
-				<h3 class="wanderlust-details-subtitle"><em>Tools Used</em></h3>
-				<img src="images/projects/Figma Icon (Full-color).png" alt="Figma Logo" width="20%">
-				<img src="images/projects/Xcode.png" alt="Xcode Logo" width="15%" style="margin-right: 2rem;">
-				<img src="images/projects/Swift.png" alt="Swift logo" width="15%">
-			</div>
-		</div>
-		<!-- </div> -->
 	</section>
-	<!-- BOTTOM SECTION END -->
-</body> 
-<script src="js/scroll.js"></script>
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src="js/jquery.nav.js"></script>
-<script src="js/isotope.js"></script>
-<script src="js/imagesloaded.min.js"></script>
-<script src="js/custom.js"></script>
+
+	<script src="js/project.js"></script>
+</body>
 </html>

@@ -15,7 +15,7 @@ updateNav();
 
 
 // ── Project images: jello parallax ──
-const jelloEls = document.querySelectorAll('.project-img:not(.mockup), .mockup-wrap');
+let jelloEls = [...document.querySelectorAll('.project-img:not(.mockup), .mockup-wrap')];
 
 let lastScrollY  = window.scrollY;
 let velocity     = 0;
@@ -45,3 +45,30 @@ window.addEventListener('scroll', () => {
         requestAnimationFrame(applyJello);
     }
 }, { passive: true });
+
+
+// ── View More / View Less ──
+const viewMoreBtn  = document.getElementById('view-more-btn');
+const viewLessBtn  = document.getElementById('view-less-btn');
+const moreProjects = document.getElementById('more-projects');
+
+viewMoreBtn.addEventListener('click', () => {
+    moreProjects.classList.add('visible');
+    viewMoreBtn.style.display = 'none';
+    viewLessBtn.style.display = 'inline-block';
+
+    // Re-collect jello targets to include newly visible images
+    jelloEls = [...document.querySelectorAll('.project-img:not(.mockup), .mockup-wrap')];
+});
+
+viewLessBtn.addEventListener('click', () => {
+    moreProjects.classList.remove('visible');
+    viewLessBtn.style.display = 'none';
+    viewMoreBtn.style.display = 'inline-block';
+
+    // Scroll back up to the projects section
+    document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+
+    // Trim jello targets back to only visible images
+    jelloEls = [...document.querySelectorAll('.project-img:not(.mockup), .mockup-wrap')];
+});

@@ -341,6 +341,14 @@ body {
     margin-bottom: 1.4rem;
 }
 
+.more-projects-hidden {
+    display: none;
+}
+
+.more-projects-hidden.visible {
+    display: block;
+}
+
 .view-more-wrap {
     text-align: center;
     margin-top: 1rem;
