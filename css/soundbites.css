@@ -1,0 +1,317 @@
+/* ── SoundBites Color Tokens ── */
+:root {
+    --sb-coral:       #e87a78;
+    --sb-coral-dark:  #c45f5d;
+    --sb-cream:       #fdf6ef;
+    --sb-cream-alt:   #f7ede3;
+    --sb-text:        #3a3a3a;
+    --sb-muted:       #6b6b6b;
+}
+
+/* ── Nav overrides for project page ── */
+.sb-nav .nav-logo {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    position: static !important;
+}
+
+.sb-nav .nav-name {
+    display: none;
+}
+
+.sb-nav.scrolled {
+    background: rgba(232, 122, 120, 0.25);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* ── Hero ── */
+.sb-hero {
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: var(--sb-cream);
+    padding: 8rem 2rem 5rem;
+}
+
+.sb-hero-bg {
+    position: absolute;
+    inset: 0;
+    filter: blur(80px);
+    z-index: 0;
+}
+
+.sb-blob {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.sb-blob-1 {
+    width: 420px;
+    height: 420px;
+    background: radial-gradient(circle, #e8a09f 0%, #f5cbc9 60%, transparent 100%);
+    top: -15%;
+    left: -8%;
+    animation: drift1 18s ease-in-out infinite;
+}
+
+.sb-blob-2 {
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, #f2b89a 0%, #f9d4be 60%, transparent 100%);
+    bottom: -10%;
+    right: -5%;
+    animation: drift2 22s ease-in-out infinite;
+}
+
+.sb-blob-3 {
+    width: 280px;
+    height: 280px;
+    background: radial-gradient(circle, #f5cbc9 0%, #fde8e7 60%, transparent 100%);
+    top: 30%;
+    left: 50%;
+    animation: drift3 20s ease-in-out infinite;
+}
+
+.sb-hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 640px;
+}
+
+.sb-title-logo {
+    width: 55%;
+    max-width: 360px;
+    margin-bottom: 1.4rem;
+}
+
+.sb-tagline {
+    font-size: 1.05rem;
+    color: var(--sb-muted);
+    font-style: italic;
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
+}
+
+/* Meta row */
+.sb-meta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.sb-meta-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.sb-meta-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    color: var(--sb-coral);
+    text-transform: uppercase;
+}
+
+.sb-meta-value {
+    font-size: 0.9rem;
+    color: var(--sb-text);
+}
+
+.sb-meta-divider {
+    width: 1px;
+    height: 32px;
+    background: rgba(0,0,0,0.12);
+}
+
+/* ── Mockup Banner ── */
+.sb-mockup-banner {
+    background: var(--sb-cream-alt);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    overflow: hidden;
+}
+
+.sb-mockup-banner img {
+    max-width: 560px;
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* ── Case Study Sections ── */
+.sb-case-section {
+    padding: 6rem 2rem;
+    background: var(--sb-cream);
+}
+
+.sb-case-section.sb-alt {
+    background: var(--sb-cream-alt);
+}
+
+.sb-case-inner {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.sb-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    color: var(--sb-coral);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+.sb-section-title {
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--sb-text);
+    margin-bottom: 1.6rem;
+    line-height: 1.2;
+}
+
+.sb-body {
+    font-size: 1rem;
+    color: var(--sb-muted);
+    line-height: 1.9;
+    margin-bottom: 1.2rem;
+}
+
+.sb-cta-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+/* SoundBites outline button */
+.sb-btn {
+    border-color: var(--sb-coral) !important;
+    color: var(--sb-coral) !important;
+}
+
+.sb-btn:hover {
+    border-color: var(--sb-coral-dark) !important;
+    color: var(--sb-coral-dark) !important;
+}
+
+/* ── Process ── */
+.sb-process-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.sb-process-card {
+    border-top: 2px solid var(--sb-coral);
+    padding-top: 1.4rem;
+}
+
+.sb-step {
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    color: var(--sb-coral);
+    display: block;
+    margin-bottom: 0.6rem;
+}
+
+.sb-process-card h3 {
+    font-size: 1rem;
+    color: var(--sb-text);
+    margin-bottom: 0.8rem;
+}
+
+.sb-process-card p {
+    font-size: 0.88rem;
+    color: var(--sb-muted);
+    line-height: 1.8;
+}
+
+/* ── Early Drafts ── */
+.sb-drafts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    max-width: 1000px;
+    margin: 3rem auto 0;
+    padding: 0 2rem;
+}
+
+.sb-draft-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.sb-draft-item img {
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.09);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sb-draft-item img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.13);
+}
+
+/* ── Screens ── */
+.sb-screens-section {
+    padding: 6rem 2rem;
+    background: var(--sb-cream);
+}
+
+.sb-screens-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    max-width: 1000px;
+    margin: 3rem auto 0;
+    padding: 0 2rem;
+}
+
+.sb-screen-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.sb-screen-item img {
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.09);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sb-screen-item img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.13);
+}
+
+.sb-caption {
+    font-size: 0.82rem;
+    color: var(--sb-muted);
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+
+/* ── Contact section override ── */
+.sb-contact {
+    background: var(--sb-cream-alt);
+}
+
+.sb-contact .form-group input:focus,
+.sb-contact .form-group textarea:focus {
+    border-bottom-color: var(--sb-coral);
+}

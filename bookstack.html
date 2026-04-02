@@ -1,116 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="">
-	<meta name="description" content="">
-	<title>Book Stack Page</title>
+	<title>Book Stock — Edrienne Gregana</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/project.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Pixelify+Sans:wght@400..700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<style>
+		:root {
+			--proj-accent:       #6c584c;
+			--proj-accent-mid:   #a98467;
+			--proj-accent-light: #cdbfb6;
+			--proj-bg:           #fdf8f4;
+			--proj-bg-alt:       #f5ede4;
+			--proj-text:         #2a1e14;
+			--proj-muted:        #6a5040;
+		}
+	</style>
+</head>
+<body>
 
-	<!-- STYLESHEETS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/templatemo-style.css">
-	<link rel="stylesheet" href="css/projects.css">
-	<link href='//fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
-</head>  
+	<!-- Nav -->
+	<nav class="navbar proj-nav">
+		<a href="index.html" class="nav-brand" aria-label="Back to portfolio">
+			<img src="images/EG_logo.png" alt="EG" class="nav-logo">
+		</a>
+		<ul class="nav-links">
+			<li><a href="#overview">Overview</a></li>
+			<li><a href="#work">Features</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
 
-<body data-spy="scroll" data-target="#rock-navigation">
-    <!-- START NAVIGATION -->
-	<div class="navbar navbar-default bs-dos-nav navbar-fixed-top sticky-navigation" role="navigation">
-		<div class="container">
-
-			<div class="navbar-header">
-				<button class="navbar-toggle" data-toggle="collapse" data-target="#rock-navigation">
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-				</button>
-				<a href="index.html#portfolio" class="navbar-brand">Edrienne Gregana</a>
-			</div>
-			<nav class="collapse navbar-collapse" id="rock-navigation">
-				<ul class="nav navbar-nav navbar-right main-navigation text-uppercase">
-					<li><a href="index.html#portfolio" class="smoothScroll">Home</a></li>
-					<!-- <li><a href="#work" class="smoothScroll">My Work</a></li> -->
-					<li><a href="#hero" class="smoothScroll">Problem</a></li>
-					<li><a href="#middle" class="smoothScroll">Solution</a></li>
-					<li><a href="#bottom" class="smoothScroll">Details</a></li>
-				</ul>
-			</nav>
+	<!-- Hero -->
+	<section class="proj-hero">
+		<div class="proj-hero-bg">
+			<div class="proj-blob proj-blob-1"></div>
+			<div class="proj-blob proj-blob-2"></div>
+			<div class="proj-blob proj-blob-3"></div>
 		</div>
+		<div class="proj-hero-content">
+			<span class="pixelify-sans-regular proj-eyebrow">Personal Project · Full Stack</span>
+			<h1 class="mea-culpa-regular proj-title">Book Stock</h1>
+			<p class="tinos-regular proj-tagline">An inventory tracker for book lovers because your collection deserves better than a simple note.</p>
+			<div class="proj-meta">
+				<div class="proj-meta-item">
+					<span class="pixelify-sans-regular proj-meta-label">Role</span>
+					<span class="tinos-regular proj-meta-value">Designer &amp; Developer</span>
+				</div>
+				<div class="proj-meta-divider"></div>
+				<div class="proj-meta-item">
+					<span class="pixelify-sans-regular proj-meta-label">Platform</span>
+					<span class="tinos-regular proj-meta-value">Web (React)</span>
+				</div>
+				<div class="proj-meta-divider"></div>
+				<div class="proj-meta-item">
+					<span class="pixelify-sans-regular proj-meta-label">Tools</span>
+					<span class="tinos-regular proj-meta-value">JavaScript · Firebase · VSCode</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Cover -->
+	<div class="proj-cover-banner">
+		<img src="images/projects/bookscreen.png" alt="Book Stock interface">
 	</div>
-	<!-- END NAVIGATION -->
 
-	<!-- START HERO -->
-	<section id="hero" class="book-hero hero">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-2 col-sm-1"></div>
-				<div class="col-md-8 col-sm-10">
-					<h1 class="tm-home-title"><strong></strong></h1>
-					<h1 class="tm-home-subtitle book-darkbrown large-title">Book Stock</h1>
-					<p class="book-darkbrown">An inventory tracking website that helps book lovers keep track of their book collection. This project is meant to integrate AI through image recognition in order to make the user's experience as easy as it can be.</p>
-                    <a href="https://www.loom.com/embed/d243a8e33f20470b892ff609923bfa97?sid=c3cb3185-64ca-48a0-9dec-c5cfd85dce48" target="_blank" class="btn btn-default smoothScroll book-view-more-btn">View Demo</a>
-				</div>
-				<div class="col-md-2 col-sm-1"></div>
+	<!-- Overview -->
+	<section class="proj-section" id="overview">
+		<div class="proj-inner">
+			<span class="pixelify-sans-regular proj-label">The Problem</span>
+			<h2 class="mea-culpa-regular proj-section-title">Know your shelves.</h2>
+			<p class="tinos-regular proj-body">Book lovers often struggle to keep track of what they own, what they've read, and what they want to read next. Book Stock is a personal inventory platform that gives readers a clean, searchable record of their entire collection.</p>
+			<p class="tinos-regular proj-body">The goal was to make the process as frictionless as possible starting with manual entry and image uploads, with a roadmap toward AI provided recommendations.</p>
+			<div class="proj-cta-row">
+				<a href="https://www.loom.com/embed/d243a8e33f20470b892ff609923bfa97?sid=c3cb3185-64ca-48a0-9dec-c5cfd85dce48" target="_blank" class="btn-outline pixelify-sans-regular proj-btn">View Demo</a>
 			</div>
 		</div>
 	</section>
-	<!-- END HERO -->
-	<!-- MIDDLE SECTION -->
-	 <section id="middle" class="middle-section">
-		<div class="container">
-			<div class="col-md-6">
-				<div>
-					<h4 class="medium-title book-darkbrown">Solution</h4>
-					<ul class="list book-darkbrown">
-						<li>Ability to add items & view them through the table</li>
-						<li>Add Image to items</li>
-					</ul>
+
+	<!-- Features -->
+	<section class="proj-section proj-alt" id="work">
+		<div class="proj-inner">
+			<span class="pixelify-sans-regular proj-label">What I Built</span>
+			<h2 class="mea-culpa-regular proj-section-title">Features.</h2>
+			<div class="proj-features">
+				<div class="proj-feature-card">
+					<h3 class="tinos-bold">Add &amp; Manage Books</h3>
+					<p class="tinos-regular">Users can add books to their collection and view them in a clean table layout. Built with Next.js, changes are reflected in real time via Firebase.</p>
 				</div>
-				<div>
-					<h5 class="small-title book-darkbrown">Future Implementation</h5>
-					<ul class="list book-darkbrown">
-						<li>Search feature</li>
-						<li>Enter a book by only taking a picture (AI assisted)</li>
-						<li>Account creation</li>
-					</ul>
+				<div class="proj-feature-card">
+					<h3 class="tinos-bold">Image Uploads</h3>
+					<p class="tinos-regular">Readers can attach a cover image to each entry, making their collection more visual and easier to browse at a glance.</p>
 				</div>
-			</div>
-			<div class="col-md-6">
-				<img src="images/projects/bookscreen.png" alt="screens and phone mockup of wanderlust app" class="mockup">
+				<div class="proj-feature-card">
+					<h3 class="tinos-bold">Firebase Backend</h3>
+					<p class="tinos-regular">Leveraged Firebase for real-time data storage and retrieval, keeping the architecture lightweight while enabling live updates across sessions.</p>
+				</div>
+				<div class="proj-feature-card">
+					<h3 class="tinos-bold">Roadmap: AI Book Recommendations</h3>
+					<p class="tinos-regular">The next step is AI provided recommendations assisting users with finding their next book obsession. </p>
+				</div>
 			</div>
 		</div>
-	 </section>
-	<!-- MIDDLE SECTION END -->
-	<!-- BOTTOM SECTION -->
-	<section id="bottom" class="book-background-box">
-		<h1 class="book-details-title">Details</h1>
-		<div class="box-wrapper book-background-box">
-			<div id="palette" class="col detail-box book-background-box white">
-				<h3 class="book-details-subtitle">Color</h3>
-				<div class="col book-color-1">#6C584C</div>
-				<div class="col book-color-2">#A98467</div>
-				<div class="col book-color-3">#CDBFB6</div>
-			</div>
-			<div id="tool" class="col detail-box book-background-box white">
-				<h3 class="book-details-subtitle">Tools Used</h3>
-				<img src="images/projects/vscode.png" class="book-tools" width="15%">
-				<img src="images/projects/Next.js.png" class="book-tools" width="15%">
-				<img src="images/projects/firebase.png" class="book-tools" width="15%">
-			</div>
-		</div>
-		<!-- </div> -->
 	</section>
-	<!-- BOTTOM SECTION END -->
-</body> 
-<script src="js/scroll.js"></script>
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src="js/jquery.nav.js"></script>
-<script src="js/isotope.js"></script>
-<script src="js/imagesloaded.min.js"></script>
-<script src="js/custom.js"></script>
+
+	<!-- Contact -->
+	<section class="contact-section proj-contact" id="contact">
+		<div class="contact-inner">
+			<h2 class="mea-culpa-regular">Reach Out</h2>
+			<p class="tinos-regular contact-sub">Have a question about this project, or just want to connect?</p>
+			<form class="contact-form" action="https://formspree.io/f/mvzvbvzb" method="POST">
+				<div class="form-row">
+					<div class="form-group">
+						<label class="tinos-regular" for="bs-name">Name</label>
+						<input class="tinos-regular" type="text" id="bs-name" name="name" placeholder="Your name" required>
+					</div>
+					<div class="form-group">
+						<label class="tinos-regular" for="bs-email">Email</label>
+						<input class="tinos-regular" type="email" id="bs-email" name="email" placeholder="your@email.com" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="tinos-regular" for="bs-message">Message</label>
+					<textarea class="tinos-regular" id="bs-message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+				</div>
+				<div class="form-submit">
+					<button type="submit" class="btn-outline pixelify-sans-regular proj-btn">send it</button>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<script src="js/project.js"></script>
+</body>
 </html>

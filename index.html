@@ -9,322 +9,209 @@
 	<!-- SITE TITLE -->
 	<title>Edrienne Gregana Portfolio</title>
 
-	<!-- STYLESHEETS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/templatemo-style.css">
-	<link rel="stylesheet" href="css/envelope.css">
-	<link href="css/lightbox.css" rel="stylesheet" />
-	<link href='//fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
-	<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
-
+	<!-- STYLESHEET -->
+	<link rel="stylesheet" href="css/main.css">
+	<!-- GOOGLE FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Pixelify+Sans:wght@400..700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
-<body data-spy="scroll" data-target="#rock-navigation">
-	<!-- START NAVIGATION -->
-	<div class="navbar navbar-default bs-dos-nav navbar-fixed-top sticky-navigation" role="navigation">
-		<div class="container">
+<body>
 
-			<div class="navbar-header">
-				<button class="navbar-toggle" data-toggle="collapse" data-target="#rock-navigation">
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-				</button>
-				<a href="#" class="navbar-brand">Edrienne Gregana</a>
-			</div>
-			<nav class="collapse navbar-collapse" id="rock-navigation">
-				<ul class="nav navbar-nav navbar-right main-navigation text-uppercase">
-					<li><a href="#home" class="smoothScroll">Home</a></li>
-					<!-- <li><a href="#work" class="smoothScroll">My Work</a></li> -->
-					<li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
-					<li><a href="#resume" class="smoothScroll">Resume</a></li>
-					<li><a href="#about" class="smoothScroll">About</a></li>
-					<!-- <li><a href="#contact" class="smoothScroll">Contact</a></li> -->
-				</ul>
-			</nav>
+	<!-- Nav -->
+	<nav class="navbar">
+		<a href="#" class="nav-brand" id="navBrand" aria-label="Back to top">
+			<img src="images/EG_logo.png" alt="EG" class="nav-logo" id="navLogo">
+			<span class="nav-name mea-culpa-regular" id="navName">Edrienne Gregana</span>
+		</a>
+		<ul class="nav-links">
+			<li><a href="#projects">Projects</a></li>
+			<li><a href="#about">About Me</a></li>
+		</ul>
+	</nav>
 
+	<!-- Hero Section -->
+	<section class="hero">
+		<div class="hero-blobs">
+			<div class="blob blob-1"></div>
+			<div class="blob blob-2"></div>
+			<div class="blob blob-3"></div>
+			<div class="blob blob-4"></div>
+			<div class="blob blob-5"></div>
 		</div>
-	</div>
-	<!-- END NAVIGATION -->
-
-	<!-- START HOME -->
-	<section id="home" class="templatemo-home">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-2 col-sm-1"></div>
-				<div class="col-md-8 col-sm-10">
-					<!-- <h1 class="tm-home-title"><strong></strong></h1> -->
-					<img src="images/name.png" alt="Edrienne Gregana in metallic font" width="900vw" height="auto">
-					<h2 class="tm-home-subtitle">Software Engineer</h2>
-					<p>I am a professional <strong>software engineer</strong> with a passion for <strong>UX/UI</strong>, focused on creating unique and accessible designs that enhance user experiences</p>
-					<a href="#portfolio" class="btn btn-default smoothScroll tm-view-more-btn">Let's Begin</a>
-				</div>
-				<div class="col-md-2 col-sm-1"></div>
-			</div>
+		<div class="hero-content">
+			<h1 class="mea-culpa-regular" style="font-size: 100px;">Edrienne Gregana</h1>
+			<p class="pixelify-sans-regular description" style="font-size: 15px"> Is a Software Engineer &amp; UX/UI Designer who crafts digital experiences that work beautifully on the inside and feel effortless on the outside.</p>
 		</div>
 	</section>
-	<!-- END HOME -->
 
-	<!-- START work -->
-	<section id="work" class="tm-padding-top-bottom-100">
-		<div class="container">
-			<div class="row" style="margin: 5rem 0 5rem 0;">
-				<div class="column">
-					<h2 class="title">My <strong>Latest Adventure</strong></h2>						
+	<!-- Projects Section -->
+	<section class="projects-section" id="projects">
+
+		<!-- SoundBites — image left -->
+		<div class="project-row">
+			<div class="project-img-wrap mockup-wrap">
+				<img src="images/soundBites-mockup (1).png" alt="SoundBites mockup" class="project-img mockup">
+			</div>
+			<div class="project-text">
+				<h3 class="tinos-bold">SoundBites</h3>
+				<p class="tinos-regular">A mobile app that turns your music taste into personalized food recommendations. Built with React.js and powered by the Google &amp; Spotify API.</p>
+				<a href="soundBites.html" class="btn-outline pixelify-sans-regular">read more</a>
+			</div>
+		</div>
+
+		<!-- Limbitless — image right -->
+		<div class="project-row reverse">
+			<img src="images/projects/limbitless-disneyexpo.JPG" alt="Limbitless" class="project-img">
+			<div class="project-text">
+				<h3 class="tinos-bold">Limbitless</h3>
+				<p class="tinos-regular">A web development internship at Limbitless Solutions. A nonprofit empowering children through accessible technology. I designed and developed pages on their live site, from rebuilding the ENGAGE section to creating a centralized news hub.</p>
+				<a href="limbitless.html" class="btn-outline pixelify-sans-regular">read more</a>
+			</div>
+		</div>
+
+		<!-- Arboretum — image left -->
+		<div class="project-row">
+			<img src="images/projects/arb3.jpeg" alt="The Arboretum" class="project-img">
+			<div class="project-text">
+				<h3 class="tinos-bold">The Arboretum</h3>
+				<p class="tinos-regular">A student organization at UCF where I managed the website and led a full redesign as the Arboretum merged with UCF Sustainability Initiatives. I also contributed photography and creative support for events and campaigns.</p>
+				<a href="arboretum.html" class="btn-outline pixelify-sans-regular">read more</a>
+			</div>
+		</div>
+
+		<!-- Hidden projects: revealed by "view more" -->
+		<div id="more-projects" class="more-projects-hidden">
+
+			<!-- ASIS — image right -->
+			<div class="project-row reverse">
+				<img src="images/asis.png" alt="ASIS Lab Assistant" class="project-img">
+				<div class="project-text">
+					<h3 class="tinos-bold">ASIS: Lab Assistant</h3>
+					<p class="tinos-regular">A Senior Design project sponsored by Accenture to build a centralized platform for monitoring and controlling multiple laboratory machines from a single interface, improving research lab efficiency and usability.</p>
+					<a href="asis.html" class="btn-outline pixelify-sans-regular">read more</a>
 				</div>
-				<div class="col-md-6 col-sm-6">
-					<div class="work-wrapper">
-						<img src="images/DCP-Logo-Feature-Image.png" alt="Disney College Program Logo" width="70%" height="70%">
-					</div>
+			</div>
+
+			<!-- Saturn — image left -->
+			<div class="project-row">
+				<img src="images/saturn-cover.png" alt="Saturn" class="project-img">
+				<div class="project-text">
+					<h3 class="tinos-bold">Saturn</h3>
+					<p class="tinos-regular">A space-themed AI search platform built with React.js, inspired by Google Gemini. A creative personal project to explore custom theming and modern UI design with my own flair.</p>
+					<a href="saturn.html" class="btn-outline pixelify-sans-regular">read more</a>
 				</div>
-				<div class="col-md-6 col-sm-6">
-					<div class="work-wrapper">
-						<p>Big news! I've be embarked on a magical adventure through the Disney College Program at Walt Disney World! 🎉<br> From being a lifelong Disney fan to now becoming part of the magic, I'm so excited to create unforgettable memories for guests from around the globe. Whether it's putting smiles on faces, sharing the joy of storytelling, or growing both personally and professionally, I'm beyond excited for what's ahead.<br>Let the magic begin✨🏰</p>
-					</div>
+			</div>
+
+			<!-- Book Stock — image right -->
+			<div class="project-row reverse">
+				<img src="images/bookstock-cover.png" alt="Book Stock" class="project-img">
+				<div class="project-text">
+					<h3 class="tinos-bold">Book Stock</h3>
+					<p class="tinos-regular">An inventory tracking website that helps book lovers manage their collection, integrated with AI search recommendations to make cataloging as effortless as possible.</p>
+					<a href="bookstack.html" class="btn-outline pixelify-sans-regular">read more</a>
 				</div>
+			</div>
+
+			<!-- Sproutfolio — image right -->
+			<div class="project-row">
+				<img src="images/sproutfolio-cover.png" alt="Sproutfolio" class="project-img">
+				<div class="project-text">
+					<h3 class="tinos-bold">Sproutfolio</h3>
+					<p class="tinos-regular">A contact management system with full CRUD functionality, built for my Object-Oriented Software Development course. I handled web design and front-end development.</p>
+					<a href="sproutfolio.html" class="btn-outline pixelify-sans-regular">read more</a>
+				</div>
+			</div>
+
+			<!-- Wanderlust — image right -->
+			<div class="project-row reverse">
+				<img src="images/projects/wanderlust.png" alt="Wanderlust" class="project-img">
+				<div class="project-text">
+					<h3 class="tinos-bold">Wanderlust</h3>
+					<p class="tinos-regular">A travel planning app built for my Mobile Development course. Worked with a team to design and develop an app that helps users discover and organize vacation activities all in one place.</p>
+					<a href="wanderlust.html" class="btn-outline pixelify-sans-regular">read more</a>
+				</div>
+			</div>
+
+			<!-- Jackbox — image left -->
+			<div class="project-row">
+				<img src="images/jackbox-cover.png" alt="Jackbox Games" class="project-img">
+				<div class="project-text">
+					<h3 class="tinos-bold">Jackbox Games</h3>
+					<p class="tinos-regular">A classic Tic-Tac-Toe game contributed to a shared Jackbox-inspired multiplayer platform, built for a KnightHacks project presentation during my first semester of coding.</p>
+					<a href="jackbox.html" class="btn-outline pixelify-sans-regular">read more</a>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="view-more-wrap">
+			<button id="view-more-btn" class="btn-outline pixelify-sans-regular">view more</button>
+			<button id="view-less-btn" class="btn-outline pixelify-sans-regular" style="display:none;">view less</button>
 		</div>
 	</section>
-	<!-- END work -->
 
-	<!-- START PORTFOLIO -->
-	<section id="portfolio" class="tm-portfolio">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 wow bounce">
-					<div class="title">
-						<h2 class="tm-portfolio-title">My <strong>Portfolio</strong></h2>
-					</div>
-
-					<!-- START ISO SECTION -->
-					<div class="iso-section">
-						<ul class="filter-wrapper clearfix">
-							<li><a href="#" class="opc-main-bg selected" data-filter="*">All</a></li>
-							<li><a href="#" class="opc-main-bg" data-filter=".website">Website</a></li>
-							<li><a href="#" class="opc-main-bg" data-filter=".mobile">Mobile</a></li>
-							<li><a href="#" class="opc-main-bg" data-filter=".design">Design</a></li>
-							<li><a href="#" class="opc-main-bg" data-filter=".experience">Experience</a></li>
-						</ul>
-						<div class="iso-box-section">
-							<div class="iso-box-wrapper col4-iso-box">
-								<a href="soundBites.html">
-									<div class="iso-box website col-md-3 col-sm-3 col-xs-12">
-										<div class="portfolio-thumb">
-											<img src="images/soundbites-cover.png" class="fluid-img" alt="asis accenture img">
-											<div class="portfolio-overlay">
-												<h3 class="portfolio-item-title">SoundBites</h3>
-												<p>Food recommendation website based on music taste.</p>
-											</div>
-										</div>
-									</div>
-								</a>
-								<div class="iso-box website experience col-md-3 col-sm-3 col-xs-12">
-									<a href="limbitless.html">
-										<div class="portfolio-thumb">
-											<img src="images/limbitless-cover.png" class="fluid-img" alt="portfolio img">
-											<div class="portfolio-overlay">
-												<h3 class="portfolio-item-title">Web Development Internship</h3>
-												<p>An array of designs and pages I've built at my internship with Limbitless.</p>
-											</div>
-										</div>
-									</a>
-								</div>
-								<a href="asis.html">
-									<div class="iso-box website mobile experience col-md-3 col-sm-3 col-xs-12">
-										<div class="portfolio-thumb">
-											<img src="images/asis.png" class="fluid-img" alt="asis accenture img">
-											<div class="portfolio-overlay">
-												<h3 class="portfolio-item-title">Accenture ASIS: Lab Assistant</h3>
-												<p>A unified platform for research lab machine control.</p>
-											</div>
-										</div>
-									</div>
-								</a>
-								<div class="iso-box experience col-md-3 col-sm-3 col-xs-12">
-									<a href="arboretum.html">
-										<div class="portfolio-thumb">
-											<img src="images/arb-group-photo.jpeg" class="fluid-img" alt="portfolio img">
-											<div class="portfolio-overlay">
-												<h3 class="portfolio-item-title">Web Development Intern</h3>
-												<p>My first ever internship experience with the UCF Arboretum!</p>
-											</div>
-										</div>
-									</a>
-								</div>
-								<a href="saturn.html">
-									<div class="iso-box website col-md-3 col-sm-3 col-xs-12">
-										<div class="portfolio-thumb">
-											<img src="images/saturn-cover.png" class="fluid-img" 	alt="saturn cover img">
-											<div class="portfolio-overlay">
-												<h3 class="portfolio-item-title">AI Chatbot</h3>
-												<p>A customized AI search platform for your personalized needs.</p>
-											</div>
-										</div>
-									</div>
-								</a>
-								<div class="iso-box website col-md-3 col-sm-3 col-xs-12">
-									<a href="bookstack.html">
-										<div class="portfolio-thumb">
-											<img src="images/bookstock-cover.png" class="fluid-img" alt="portfolio img">
-											<div class="portfolio-overlay">
-												<h3 class="portfolio-item-title">Inventory Management</h3>
-												<p>Book inventory website for all the bookworms out there.</p>
-											</div>
-										</div>
-									</a>
-								</div>
-								<div class="iso-box design col-md-3 col-sm-3 col-xs-12">
-									<div class="portfolio-thumb">
-										<a href="images/diamondBoySZA-poster.png" class="fluid-img" data-lightbox="sza" alt="diamond boy poster cover img">
-										<img src="images/diamondBoy.png" class="fluid-img" alt="diamond boy poster cover img">
-										<div class="portfolio-overlay">
-											<h3 class="portfolio-item-title">SZA Diamond Boy poster</h3>
-											<p>First Adobe Photoshop project</p>
-										</div>
-									</div>
-								</div>
-								<div class="iso-box html mobile col-md-3 col-sm-3 col-xs-12">
-									<a href="wanderlust.html">
-										<div class="portfolio-thumb">
-											<img src="images/wanderlust.png" class="fluid-img" alt="portfolio img">
-											<div class="portfolio-overlay">
-												<h3 class="portfolio-item-title">Travel Guide</h3>
-												<p>Your personal travel guide that makes vacations just a little bit easier</p>
-											</div>
-										</div>
-									</a>
-								</div>
-								<div class="iso-box website col-md-3 col-sm-3 col-xs-12">
-									<a href="sched.html">
-										<div class="portfolio-thumb">
-											<img src="images/sched-cover.png" class="fluid-img" alt="portfolio img">
-											<div class="portfolio-overlay">
-												<h3 class="portfolio-item-title">Scheduling Help</h3>
-												<p>Effortless living, seamless planning. A website designed to help employees build the most optimal schedule.</p>
-											</div>
-										</div>
-									</a>
-								</div>
-								<div class="iso-box website col-md-3 col-sm-3 col-xs-12">
-									<a href="sproutfolio.html">
-										<div class="portfolio-thumb">
-											<img src="images/sproutfolio-cover.png" class="fluid-img" alt="portfolio img">
-											<div class="portfolio-overlay">
-												<h3 class="portfolio-item-title">Plant Book</h3>
-												<p>A place to record all your plants.</p>
-											</div>
-										</div>
-									</a>
-								</div>
-								<div class="iso-box website col-md-3 col-sm-3 col-xs-12">
-									<a href="jackbox.html">
-										<div class="portfolio-thumb">
-											<img src="images/jackbox-cover.png" class="fluid-img" alt="portfolio img">
-											<div class="portfolio-overlay">
-												<h3 class="portfolio-item-title">Game Platform</h3>
-												<p>My first ever coding project based in Unity. This is a platform with a range of games for unlimited fun.</p>
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
+	<!-- About Me Section -->
+	<section class="about-section" id="about">
+		<div class="about-inner">
+			<img src="images/ProfessionalShot.JPG" alt="Edrienne Gregana" class="about-photo">
+			<div class="about-text">
+				<h2 class="mea-culpa-regular">About Me</h2>
+				<p class="tinos-regular">Hi! I'm Edrienne, a Software Engineer and UX/UI Designer. I love building things that live at the intersection of thoughtful design and clean code. When I'm not designing or developing, you can find me exploring new music, trying new foods, or sketching ideas in my notebook.</p>
+				<div class="social-links">
+					<!-- GitHub -->
+					<a href="https://github.com/eddymarg" target="_blank" aria-label="GitHub">
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+						</svg>
+					</a>
+					<!-- LinkedIn -->
+					<a href="https://www.linkedin.com/in/edrienne-g/" target="_blank" aria-label="LinkedIn">
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+							<rect x="2" y="9" width="4" height="12"/>
+							<circle cx="4" cy="4" r="2"/>
+						</svg>
+					</a>
+					<!-- TikTok -->
+					<a href="https://www.tiktok.com/@matchamuse1?_r=1&_t=ZP-95D2mNzF42Q" target="_blank" aria-label="TikTok">
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/>
+						</svg>
+					</a>
 				</div>
+				<p class="tinos-regular" style="font-size: 0.8rem; opacity: 0.6; margin-top: 0.5rem;">(Just a girl exploring her inner tiktok influencer life.)</p>
 			</div>
 		</div>
 	</section>
-	<!-- END PORTFOLIO -->
 
-	<!-- START RESUME -->
-	<section id="resume" class="tm-padding-top-bottom-100">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-sm-6">					
-					<h2 class="title">My <strong>Profile</strong></h2>
-					<p><span class="tm-info-label">Name</span> Edrienne Gregana</p>
-					<p><span class="tm-info-label">Email</span> edgregana@gmail.com</p>
-					<p><span class="tm-info-label">Resume</span> <a href="images/EGregana_TechResume.pdf" target="_blank"class="tm-red-text">click here</a></p>
-				</div>
-				<div class="col-md-6 col-sm-6">
-					<h2 class="title"><strong>My</strong> Skills</h2>
-					<p>The majority of my skills align with frontend development and web design. From React.js to Figma designs, my passion lies with the Frontend. </p>
-					<h4 class="tm-progress-label">Frontend Development Technologies <small class="progress-percent-small">100%</small></h4>
-					<div class="progress tm-progress">
-						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+	<!-- Contact Section -->
+	<section class="contact-section" id="contact">
+		<div class="contact-inner">
+			<h2 class="mea-culpa-regular">Reach Out</h2>
+			<p class="tinos-regular contact-sub">Whether it's a project, a question, or just a hello. I'd love to hear from you.</p>
+			<form class="contact-form" action="https://formspree.io/f/mvzvbvzb" method="POST">
+				<div class="form-row">
+					<div class="form-group">
+						<label class="tinos-regular" for="name">Name</label>
+						<input class="tinos-regular" type="text" id="name" name="name" placeholder="Your name" required>
 					</div>
-					<h4 class="tm-progress-label">Product Design <small class="progress-percent-small">90%</small></h4>
-					<div class="progress tm-progress">
-						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
-					</div>
-					<h4 class="tm-progress-label">Backend <small class="progress-percent-small">50%</small></h4>
-					<div class="progress tm-progress">
-						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+					<div class="form-group">
+						<label class="tinos-regular" for="email">Email</label>
+						<input class="tinos-regular" type="email" id="email" name="email" placeholder="your@email.com" required>
 					</div>
 				</div>
-			</div>
+				<div class="form-group">
+					<label class="tinos-regular" for="message">Message</label>
+					<textarea class="tinos-regular" id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+				</div>
+				<div class="form-submit">
+					<button type="submit" class="btn-outline pixelify-sans-regular">send it</button>
+				</div>
+			</form>
 		</div>
 	</section>
-	<!-- END RESUME -->
 
-	<!-- START ABOUT -->
-	<section id="about" class="tm-about">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-offset-6 col-md-6 col-sm-offset-6 col-sm-7">
-					<div class="title">
-						<h2 class="white">About <strong>Me</strong></h2>
-						<h1 class="tm-red-text">Software <strong>Developer</strong></h1>
-					</div>
-					<p class="white">Hi, I'm Edrienne a UCF Computer Science graduate with a passion for frontend development and design. My background in art and design sparked a deep interest in creating engaging user experiences, leading me to a field where creativity seamlessly blends with code.</p>
-					<p class="white">With expertise in programming languages like Java, C, and JavaScript, as well as frameworks such as React, I bring a strong blend of technical proficiency and artistic vision to every project. My goal is to create visually compelling, inclusive web experiences that effectively meet diverse user needs.</p>
-					<p class="white">From designing elegant user interfaces in Figma to tackling complex coding challenges, I'm committed to exploring innovative perspectives in software development.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- END ABOUT -->
-
-	<!-- START SOCIAL -->
-	<section id="social" class="tm-social">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-sm-6 wow rotateInUpLeft" data-wow-delay="0.3s">
-					<div class="media socials linkedin">
-						<a href="https://www.linkedin.com/in/edrienne-g/">
-							<div class="media-object pull-left">
-								<i class="fa fa-linkedin"></i>
-							</div>
-							<div class="media-body">
-								<h4 class="media-heading tm-social-title">Connect with me on</h4>
-								<h3>LinkedIn</h3>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-6 wow rotateInUpLeft" data-wow-delay="0.6s">
-					<div class="media socials github">
-						<a href="https://github.com/eddymarg" target="_blank">
-							<div class="media-object pull-left">
-								<i class="fa fa-github"></i>
-							</div>
-							<div class="media-body">
-								<h4 class="media-heading tm-social-title">Check out some of my projects on</h4>
-								<h3>Github</h3>
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/smoothscroll.js"></script>
-	<script src="js/envelope.js"></script>
-	<script src="js/jquery.nav.js"></script>
-	<script src="js/isotope.js"></script>
-	<script src="js/imagesloaded.min.js"></script>
-	<script src="js/custom.js"></script>
-	<script src="js/lightbox.js"></script>
+	<script src="js/portfolio.js"></script>
 </body>
 </html>

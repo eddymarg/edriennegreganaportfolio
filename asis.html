@@ -1,96 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="">
-	<meta name="description" content="">
-	<!-- SITE TITLE -->
-	<title>ASIS: Lab Assistant Page</title>
+	<title>ASIS — Edrienne Gregana</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/project.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Pixelify+Sans:wght@400..700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<style>
+		:root {
+			--proj-accent:       #c96a1c;
+			--proj-accent-mid:   #e08840;
+			--proj-accent-light: #f2c898;
+			--proj-bg:           #fef8f2;
+			--proj-bg-alt:       #fdf0e0;
+			--proj-text:         #2a1a0a;
+			--proj-muted:        #7a5830;
+		}
+	</style>
+</head>
+<body>
 
-	<!-- STYLESHEETS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/templatemo-style.css">
-	<link rel="stylesheet" href="css/projects.css">
-	<link href='//fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
+	<!-- Nav -->
+	<nav class="navbar proj-nav">
+		<a href="index.html" class="nav-brand" aria-label="Back to portfolio">
+			<img src="images/EG_logo.png" alt="EG" class="nav-logo">
+		</a>
+		<ul class="nav-links">
+			<li><a href="#overview">Overview</a></li>
+			<li><a href="#work">My Work</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
 
-</head>  
-<body data-spy="scroll" data-target="#rock-navigation">
-    <!-- START NAVIGATION -->
-	<div class="navbar navbar-default bs-dos-nav navbar-fixed-top sticky-navigation" role="navigation">
-		<div class="container">
-
-			<div class="navbar-header">
-				<button class="navbar-toggle" data-toggle="collapse" data-target="#rock-navigation">
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-				</button>
-				<a href="index.html#portfolio" class="navbar-brand">Edrienne Gregana</a>
-			</div>
-			<nav class="collapse navbar-collapse" id="rock-navigation">
-				<ul class="nav navbar-nav navbar-right main-navigation text-uppercase">
-					<li><a href="index.html#portfolio" class="smoothScroll">Home</a></li>
-					<!-- <li><a href="#work" class="smoothScroll">My Work</a></li> -->
-					<li><a href="#hero" class="smoothScroll">Problem</a></li>
-					<li><a href="#middle" class="smoothScroll">Solution</a></li>
-					<li><a href="#bottom" class="smoothScroll">Details</a></li>
-				</ul>
-			</nav>
+	<!-- Hero -->
+	<section class="proj-hero">
+		<div class="proj-hero-bg">
+			<div class="proj-blob proj-blob-1"></div>
+			<div class="proj-blob proj-blob-2"></div>
+			<div class="proj-blob proj-blob-3"></div>
 		</div>
-	</div>
-	<!-- END NAVIGATION -->
-
-	<!-- START HERO -->
-	<section id="hero" class="asis-hero hero">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-2 col-sm-1"></div>
-				<div class="col-md-8 col-sm-10">
-					<h1 class="tm-home-title"><strong></strong></h1>
-					<h1 class="tm-home-subtitle asis-black large-title">ASIS: Lab Assistant</h1>
-					<p class="asis-black">For our Senior Design project, my team was sponsored by Accenture to build upon an existing application aimed at optimizing research lab workflows. The goal of the project was to create a centralized platform that allowed lab personnel to monitor and control multiple laboratory machines from a single interface. We worked closely with Accenture mentors to align development with industry standards and real-world lab needs, ensuring the application would provide measurable improvements in efficiency and usability.</p>
-                    <a href="https://docs.google.com/presentation/d/1bgrKZM9DMazKQ2ofGp6e3BCIoy0LBpd9Ga7UrFZ6-L0/edit?usp=sharing" target="_blank" class="btn btn-default smoothScroll asis-view-more-btn">Project Slides</a>
+		<div class="proj-hero-content">
+			<span class="pixelify-sans-regular proj-eyebrow">Senior Design · Sponsored Project</span>
+			<h1 class="mea-culpa-regular proj-title">ASIS: Lab Assistant</h1>
+			<p class="tinos-regular proj-tagline">A centralized lab management platform built with Accenture to bring real-world efficiency to research workflows.</p>
+			<div class="proj-meta">
+				<div class="proj-meta-item">
+					<span class="pixelify-sans-regular proj-meta-label">Role</span>
+					<span class="tinos-regular proj-meta-value">Project Manager · Dev</span>
 				</div>
-				<div class="col-md-2 col-sm-1"></div>
+				<div class="proj-meta-divider"></div>
+				<div class="proj-meta-item">
+					<span class="pixelify-sans-regular proj-meta-label">Type</span>
+					<span class="tinos-regular proj-meta-value">Senior Design</span>
+				</div>
+				<div class="proj-meta-divider"></div>
+				<div class="proj-meta-item">
+					<span class="pixelify-sans-regular proj-meta-label">Tools</span>
+					<span class="tinos-regular proj-meta-value">JavaScript · Jira · Scitara</span>
+				</div>
 			</div>
 		</div>
 	</section>
-	<!-- END HERO -->
-	<!-- MIDDLE SECTION -->
-	 <section id="middle" class="middle-section">
-		<div class="container">
-			<div class="col-md-6">
-				<div>
-					<h2 class="saturn-md-title asis-black">More Info</h2>
-					<p>For more information, read up on our design document</p>
-					<h4 class="ASIS-subtitle"><em>My Role</em></h4>
-					<p class="ASIS-subtitle-content">Project Manager</p>
-					<p class="ASIS-subtitle-content">SCRUM Master</p>
-					<p class="ASIS-subtitle-content">Lab Voice Development</p>
-					<h4 class="ASIS-subtitle"><em>Tools</em></h4>
-					<p class="ASIS-subtitle-content">Voice Lab</p>
-					<p class="ASIS-subtitle-content">Scitara</p>
-					<p class="ASIS-subtitle-content">JavaScript</p>
-					<p class="ASIS-subtitle-content">Jira</p>
-				</div>
-			</div>
-			<div class="col-md-6" style="margin-top: 5rem;">
-				<embed src="images/Final Design Document.pdf" width="700" height="800">
+
+	<!-- Cover -->
+	<div class="proj-cover-banner">
+		<img src="images/asis.png" alt="ASIS Lab Assistant interface">
+	</div>
+
+	<!-- Overview -->
+	<section class="proj-section" id="overview">
+		<div class="proj-inner">
+			<span class="pixelify-sans-regular proj-label">The Project</span>
+			<h2 class="mea-culpa-regular proj-section-title">What is ASIS?</h2>
+			<p class="tinos-regular proj-body">For our Senior Design capstone, my team was sponsored by Accenture to improve an existing application aimed at optimizing research lab workflows. Lab personnel had to juggle multiple interfaces to monitor and control different machines. ASIS brought everything into one centralized platform.</p>
+			<p class="tinos-regular proj-body">We ran in two-week sprints with regular stakeholder reviews, working closely with Accenture mentors to ensure the product aligned with real industry needs and measurably improved lab efficiency.</p>
+			<div class="proj-cta-row">
+				<a href="https://docs.google.com/document/d/13fYmfV6g7txcooP8030hb6RC3O1nZrucx3lk5tcF9jc/edit?usp=sharing" target="_blank" class="btn-outline pixelify-sans-regular proj-btn">Project Documentation</a>
 			</div>
 		</div>
-	 </section>
-	<!-- MIDDLE SECTION END -->
+	</section>
 
-</body> 
-<script src="js/scroll.js"></script>
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src="js/jquery.nav.js"></script>
-<script src="js/isotope.js"></script>
-<script src="js/imagesloaded.min.js"></script>
-<script src="js/custom.js"></script>
+	<!-- My Work -->
+	<section class="proj-section proj-alt" id="work">
+		<div class="proj-inner">
+			<span class="pixelify-sans-regular proj-label">My Contributions</span>
+			<h2 class="mea-culpa-regular proj-section-title">What I did.</h2>
+			<div class="proj-features">
+				<div class="proj-feature-card">
+					<h3 class="tinos-bold">Project Manager &amp; SCRUM Master</h3>
+					<p class="tinos-regular">Led sprint planning, ran standups, and kept the team on track across the semester. Managed the Jira board and coordinated deliverables with our Accenture mentors.</p>
+				</div>
+				<div class="proj-feature-card">
+					<h3 class="tinos-bold">Lab Voice Development</h3>
+					<p class="tinos-regular">Assisted with the build of the voice interface layer of the platform, allowing lab personnel to issue commands and query machine status hands-free using the Voice Lab integration.</p>
+				</div>
+				<div class="proj-feature-card">
+					<h3 class="tinos-bold">Industry Collaboration</h3>
+					<p class="tinos-regular">Participated in regular reviews with Accenture mentors to align the product with real lab use cases, translating feedback into sprint backlog items and adjusting scope accordingly.</p>
+				</div>
+				<div class="proj-feature-card">
+					<h3 class="tinos-bold">Design Documentation</h3>
+					<p class="tinos-regular">Produced the project design document and final presentation, communicating the system architecture, key decisions, and outcomes to Accenture stakeholders.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact -->
+	<section class="contact-section proj-contact" id="contact">
+		<div class="contact-inner">
+			<h2 class="mea-culpa-regular">Reach Out</h2>
+			<p class="tinos-regular contact-sub">Have a question about this project, or just want to connect?</p>
+			<form class="contact-form" action="https://formspree.io/f/mvzvbvzb" method="POST">
+				<div class="form-row">
+					<div class="form-group">
+						<label class="tinos-regular" for="asis-name">Name</label>
+						<input class="tinos-regular" type="text" id="asis-name" name="name" placeholder="Your name" required>
+					</div>
+					<div class="form-group">
+						<label class="tinos-regular" for="asis-email">Email</label>
+						<input class="tinos-regular" type="email" id="asis-email" name="email" placeholder="your@email.com" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="tinos-regular" for="asis-message">Message</label>
+					<textarea class="tinos-regular" id="asis-message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+				</div>
+				<div class="form-submit">
+					<button type="submit" class="btn-outline pixelify-sans-regular proj-btn">send it</button>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<script src="js/project.js"></script>
+</body>
 </html>

@@ -1,0 +1,287 @@
+/* ── Arboretum Color Tokens ── */
+:root {
+    --arb-green:       #3a6b35;
+    --arb-green-mid:   #5a8c52;
+    --arb-green-light: #a8c49a;
+    --arb-bg:          #f2f5ee;
+    --arb-bg-alt:      #e8efe3;
+    --arb-text:        #1e2a1a;
+    --arb-muted:       #4e6048;
+}
+
+/* ── Nav overrides ── */
+.arb-nav .nav-logo {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    position: static !important;
+}
+
+.arb-nav .nav-name {
+    display: none;
+}
+
+.arb-nav.scrolled {
+    background: rgba(90, 140, 82, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* ── Hero ── */
+.arb-hero {
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: var(--arb-bg);
+    padding: 8rem 2rem 5rem;
+}
+
+.arb-hero-bg {
+    position: absolute;
+    inset: 0;
+    filter: blur(80px);
+    z-index: 0;
+}
+
+.arb-blob {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.arb-blob-1 {
+    width: 440px;
+    height: 440px;
+    background: radial-gradient(circle, #8ab87e 0%, #b8d4aa 60%, transparent 100%);
+    top: -15%;
+    left: -8%;
+    animation: drift1 18s ease-in-out infinite;
+}
+
+.arb-blob-2 {
+    width: 360px;
+    height: 360px;
+    background: radial-gradient(circle, #c8d8a8 0%, #deeac8 60%, transparent 100%);
+    bottom: -10%;
+    right: -5%;
+    animation: drift2 22s ease-in-out infinite;
+}
+
+.arb-blob-3 {
+    width: 280px;
+    height: 280px;
+    background: radial-gradient(circle, #a8c49a 0%, #d0e4c0 60%, transparent 100%);
+    top: 35%;
+    left: 48%;
+    animation: drift3 20s ease-in-out infinite;
+}
+
+.arb-hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 660px;
+}
+
+.arb-eyebrow {
+    display: block;
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    color: var(--arb-green-mid);
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+}
+
+.arb-title {
+    font-size: 4rem;
+    font-weight: 400;
+    color: var(--arb-text);
+    margin-bottom: 1.2rem;
+    line-height: 1.1;
+}
+
+.arb-tagline {
+    font-size: 1.05rem;
+    color: var(--arb-muted);
+    font-style: italic;
+    line-height: 1.75;
+    margin-bottom: 2.5rem;
+}
+
+.arb-meta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.arb-meta-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.arb-meta-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    color: var(--arb-green-mid);
+    text-transform: uppercase;
+}
+
+.arb-meta-value {
+    font-size: 0.9rem;
+    color: var(--arb-text);
+}
+
+.arb-meta-divider {
+    width: 1px;
+    height: 32px;
+    background: rgba(0, 0, 0, 0.12);
+}
+
+/* ── Shared section styles ── */
+.arb-section {
+    padding: 6rem 2rem;
+    background: var(--arb-bg);
+}
+
+.arb-section.arb-alt {
+    background: var(--arb-bg-alt);
+}
+
+.arb-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.arb-label {
+    display: block;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    color: var(--arb-green-mid);
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+}
+
+.arb-section-title {
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--arb-text);
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+.arb-body {
+    font-size: 1rem;
+    color: var(--arb-muted);
+    line-height: 1.9;
+    margin-bottom: 1.2rem;
+}
+
+/* ── About two-col ── */
+.arb-two-col {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.arb-two-col > div:first-child {
+    flex: 1;
+}
+
+.arb-cover-wrap {
+    flex-shrink: 0;
+    width: 400px;
+}
+
+.arb-cover-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 6px 28px rgba(58, 107, 53, 0.12);
+}
+
+/* ── Work cards ── */
+.arb-work-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+
+.arb-work-card {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.arb-work-card-reverse {
+    flex-direction: row-reverse;
+}
+
+.arb-work-card img {
+    width: 48%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 14px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 20px rgba(58, 107, 53, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.arb-work-card img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 32px rgba(58, 107, 53, 0.16);
+}
+
+.arb-work-text h3 {
+    font-size: 1.25rem;
+    color: var(--arb-text);
+    margin-bottom: 0.75rem;
+}
+
+.arb-work-text p {
+    font-size: 0.95rem;
+    color: var(--arb-muted);
+    line-height: 1.85;
+}
+
+/* ── Single photo ── */
+.arb-single-photo {
+    max-width: 1000px;
+    margin: 2.5rem auto 0;
+    padding: 0 2rem;
+}
+
+.arb-single-photo img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ── Button ── */
+.arb-btn {
+    border-color: var(--arb-green) !important;
+    color: var(--arb-green) !important;
+}
+
+.arb-btn:hover {
+    border-color: var(--arb-green-mid) !important;
+    color: var(--arb-green-mid) !important;
+}
+
+/* ── Contact override ── */
+.arb-contact {
+    background: var(--arb-bg-alt);
+}
+
+.arb-contact .form-group input:focus,
+.arb-contact .form-group textarea:focus {
+    border-bottom-color: var(--arb-green);
+}

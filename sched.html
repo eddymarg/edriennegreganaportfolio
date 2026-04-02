@@ -1,110 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="">
-	<meta name="description" content="">
-	<!-- SITE TITLE -->
-	<title>Sched Page</title>
+	<title>Sched — Edrienne Gregana</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/project.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Pixelify+Sans:wght@400..700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<style>
+		:root {
+			--proj-accent:       #3a6880;
+			--proj-accent-mid:   #5a90a8;
+			--proj-accent-light: #a8c8d8;
+			--proj-bg:           #f2f7fa;
+			--proj-bg-alt:       #e4f0f5;
+			--proj-text:         #0e2030;
+			--proj-muted:        #3a5868;
+		}
+	</style>
+</head>
+<body>
 
-	<!-- STYLESHEETS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/templatemo-style.css">
-	<link rel="stylesheet" href="css/projects.css">
-	<link href='//fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
-</head>  
-<body data-spy="scroll" data-target="#rock-navigation">
-    <!-- START NAVIGATION -->
-	<div class="navbar navbar-default bs-dos-nav navbar-fixed-top sticky-navigation" role="navigation">
-		<div class="container">
+	<!-- Nav -->
+	<nav class="navbar proj-nav">
+		<a href="index.html" class="nav-brand" aria-label="Back to portfolio">
+			<img src="images/EG_logo.png" alt="EG" class="nav-logo">
+		</a>
+		<ul class="nav-links">
+			<li><a href="#overview">Overview</a></li>
+			<li><a href="#work">My Work</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
 
-			<div class="navbar-header">
-				<button class="navbar-toggle" data-toggle="collapse" data-target="#rock-navigation">
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-				</button>
-				<a href="index.html#portfolio" class="navbar-brand">Edrienne Gregana</a>
-			</div>
-			<nav class="collapse navbar-collapse" id="rock-navigation">
-				<ul class="nav navbar-nav navbar-right main-navigation text-uppercase">
-					<li><a href="index.html#portfolio" class="smoothScroll">Home</a></li>
-					<!-- <li><a href="#work" class="smoothScroll">My Work</a></li> -->
-					<li><a href="#hero" class="smoothScroll">Problem</a></li>
-					<li><a href="#middle" class="smoothScroll">Solution</a></li>
-					<li><a href="#bottom" class="smoothScroll">Details</a></li>
-				</ul>
-			</nav>
+	<!-- Hero -->
+	<section class="proj-hero">
+		<div class="proj-hero-bg">
+			<div class="proj-blob proj-blob-1"></div>
+			<div class="proj-blob proj-blob-2"></div>
+			<div class="proj-blob proj-blob-3"></div>
 		</div>
+		<div class="proj-hero-content">
+			<span class="pixelify-sans-regular proj-eyebrow">Group Project · OOP Course</span>
+			<h1 class="mea-culpa-regular proj-title">Sched</h1>
+			<p class="tinos-regular proj-tagline">An employee scheduling platform that takes the guesswork out of building the perfect shift calendar.</p>
+			<div class="proj-meta">
+				<div class="proj-meta-item">
+					<span class="pixelify-sans-regular proj-meta-label">Role</span>
+					<span class="tinos-regular proj-meta-value">UI Design · Database</span>
+				</div>
+				<div class="proj-meta-divider"></div>
+				<div class="proj-meta-item">
+					<span class="pixelify-sans-regular proj-meta-label">Type</span>
+					<span class="tinos-regular proj-meta-value">Course Project</span>
+				</div>
+				<div class="proj-meta-divider"></div>
+				<div class="proj-meta-item">
+					<span class="pixelify-sans-regular proj-meta-label">Tools</span>
+					<span class="tinos-regular proj-meta-value">Figma · MongoDB</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Cover -->
+	<div class="proj-cover-banner">
+		<img src="images/projects/sched.png" alt="Sched scheduling interface">
 	</div>
-	<!-- END NAVIGATION -->
 
-	<!-- START HERO -->
-	<section id="hero" class="sched-hero hero">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-2 col-sm-1"></div>
-				<div class="col-md-8 col-sm-10">
-					<h1 class="tm-home-title"><strong></strong></h1>
-					<h1 class="tm-home-subtitle sched-darkbrown large-title">Sched</h1>
-					<p class="sched-darkbrown">A one-stop solution for employee scheduling. This group project, developed for my Processes of Object-Oriented Software Development class, helps employers create optimal schedules based on employee availability. I was responsible for designing the UI mockups and managing the database.</p>
+	<!-- Overview -->
+	<section class="proj-section" id="overview">
+		<div class="proj-inner">
+			<span class="pixelify-sans-regular proj-label">The Project</span>
+			<h2 class="mea-culpa-regular proj-section-title">What is Sched?</h2>
+			<p class="tinos-regular proj-body">Built for my Processes of Object-Oriented Software Development course, Sched is a group project that tackles a real workplace pain point — building employee schedules. Managers spend hours manually reconciling availability. Sched automates that by letting employees submit their preferences and generating optimal schedules from there.</p>
+			<p class="tinos-regular proj-body">My responsibilities covered the UI mockup design and the MongoDB database architecture, giving me ownership of both how the product looks and how it stores its data.</p>
+		</div>
+	</section>
+
+	<!-- My Work -->
+	<section class="proj-section proj-alt" id="work">
+		<div class="proj-inner">
+			<span class="pixelify-sans-regular proj-label">My Contributions</span>
+			<h2 class="mea-culpa-regular proj-section-title">What I did.</h2>
+			<div class="proj-features">
+				<div class="proj-feature-card">
+					<h3 class="tinos-bold">UI Design in Figma</h3>
+					<p class="tinos-regular">Designed the full interface in Figma — from the schedule dashboard and employee profiles to the account creation flow — giving the dev team a clear visual spec to build from.</p>
 				</div>
-				<div class="col-md-2 col-sm-1"></div>
+				<div class="proj-feature-card">
+					<h3 class="tinos-bold">Database Architecture</h3>
+					<p class="tinos-regular">Designed and managed the MongoDB schema to support employees, managers, availability windows, and generated schedules — ensuring the data model was flexible enough for future features.</p>
+				</div>
+				<div class="proj-feature-card">
+					<h3 class="tinos-bold">Schedule Dashboard</h3>
+					<p class="tinos-regular">Designed the primary view managers use to see generated schedules at a glance, with layouts that make shift patterns easy to read across the full work week.</p>
+				</div>
+				<div class="proj-feature-card">
+					<h3 class="tinos-bold">Employee &amp; Manager Profiles</h3>
+					<p class="tinos-regular">Built out the profile system UX for both roles — each with different permissions and views — so the app could serve both sides of the scheduling equation from a single platform.</p>
+				</div>
 			</div>
 		</div>
 	</section>
-	<!-- END HERO -->
-	<!-- MIDDLE SECTION -->
-	 <section id="middle" class="middle-section">
-		<div class="container">
-			<div class="col-md-6">
-				<div class="sched-lower">
-					<h4 class="saturn-md-title sched-darkbrown">Solution</h4>
-					<ul class="btm-list sched-darkbrown">
-						<li>Schedule dashboard</li>
-						<li>Schedule preferences</li>
-						<li>Employee & manager profiles</li>
-                        <li>Account creation with profile details</li>
-					</ul>
+
+	<!-- Contact -->
+	<section class="contact-section proj-contact" id="contact">
+		<div class="contact-inner">
+			<h2 class="mea-culpa-regular">Reach Out</h2>
+			<p class="tinos-regular contact-sub">Have a question about this project, or just want to connect?</p>
+			<form class="contact-form" action="https://formspree.io/f/mvzvbvzb" method="POST">
+				<div class="form-row">
+					<div class="form-group">
+						<label class="tinos-regular" for="sc-name">Name</label>
+						<input class="tinos-regular" type="text" id="sc-name" name="name" placeholder="Your name" required>
+					</div>
+					<div class="form-group">
+						<label class="tinos-regular" for="sc-email">Email</label>
+						<input class="tinos-regular" type="email" id="sc-email" name="email" placeholder="your@email.com" required>
+					</div>
 				</div>
-			</div>
-			<div class="col-md-6">
-				<img src="images/projects/sched-mockup.png" alt="screens and computer mockup of saturn app" class="mockup" style="width: 30vw;
-                margin: 4rem 0 0 5rem; border-radius: 20px;">
-			</div>
+				<div class="form-group">
+					<label class="tinos-regular" for="sc-message">Message</label>
+					<textarea class="tinos-regular" id="sc-message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+				</div>
+				<div class="form-submit">
+					<button type="submit" class="btn-outline pixelify-sans-regular proj-btn">send it</button>
+				</div>
+			</form>
 		</div>
-	 </section>
-	<!-- MIDDLE SECTION END -->
-	<!-- BOTTOM SECTION -->
-	<section id="bottom" class=" sched-background-btm sched-darkbrown">
-		<h2 class="sched-details-title">Details</h2>
-		<div class="box-wrapper">
-			<div id="palette" class="col detail-box">
-				<h3 class="sched-details-subtitle"><em>Color Palette</em></h3>
-				<div class="col sched-color-1"></div>
-				<div class="col sched-color-2"></div>
-				<div class="col sched-color-3"></div>
-				<div class="col sched-color-4"></div>
-			</div>
-			<div id="tool" class="col detail-box">
-				<h3 class="sched-details-subtitle"><em>Tools Used</em></h3>
-				<img src="images/projects/Figma Icon (Full-color).png" alt="Figma Logo" width="20%">
-				<img src="images/projects/MongoDB_White.png" alt="MongoDB Logo" width="20%">
-			</div>
-		</div>
-		<!-- </div> -->
 	</section>
-	<!-- BOTTOM SECTION END -->
-</body> 
-<script src="js/scroll.js"></script>
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src="js/jquery.nav.js"></script>
-<script src="js/isotope.js"></script>
-<script src="js/imagesloaded.min.js"></script>
-<script src="js/custom.js"></script>
+
+	<script src="js/project.js"></script>
+</body>
 </html>

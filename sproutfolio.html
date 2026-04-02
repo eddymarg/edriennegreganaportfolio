@@ -1,111 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="">
-	<meta name="description" content="">
-	<!-- SITE TITLE -->
-	<title>Sproutfolio Page</title>
+	<title>Sproutfolio — Edrienne Gregana</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/project.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Pixelify+Sans:wght@400..700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<style>
+		:root {
+			--proj-accent:       #4a7a56;
+			--proj-accent-mid:   #6aa070;
+			--proj-accent-light: #b0d0b8;
+			--proj-bg:           #f2f8f4;
+			--proj-bg-alt:       #e4f2e8;
+			--proj-text:         #121e14;
+			--proj-muted:        #3a5a40;
+		}
+	</style>
+</head>
+<body>
 
-	<!-- STYLESHEETS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/templatemo-style.css">
-	<link rel="stylesheet" href="css/projects.css">
-	<link href='//fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
-</head>  
-<body data-spy="scroll" data-target="#rock-navigation">
-    <!-- START NAVIGATION -->
-	<div class="navbar navbar-default bs-dos-nav navbar-fixed-top sticky-navigation" role="navigation">
-		<div class="container">
+	<!-- Nav -->
+	<nav class="navbar proj-nav">
+		<a href="index.html" class="nav-brand" aria-label="Back to portfolio">
+			<img src="images/EG_logo.png" alt="EG" class="nav-logo">
+		</a>
+		<ul class="nav-links">
+			<li><a href="#overview">Overview</a></li>
+			<li><a href="#work">Features</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
 
-			<div class="navbar-header">
-				<button class="navbar-toggle" data-toggle="collapse" data-target="#rock-navigation">
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-				</button>
-				<a href="index.html#portfolio" class="navbar-brand">Edrienne Gregana</a>
-			</div>
-			<nav class="collapse navbar-collapse" id="rock-navigation">
-				<ul class="nav navbar-nav navbar-right main-navigation text-uppercase">
-					<li><a href="index.html#portfolio" class="smoothScroll">Home</a></li>
-					<!-- <li><a href="#work" class="smoothScroll">My Work</a></li> -->
-					<li><a href="#hero" class="smoothScroll">Problem</a></li>
-					<li><a href="#middle" class="smoothScroll">Solution</a></li>
-					<li><a href="#bottom" class="smoothScroll">Details</a></li>
-				</ul>
-			</nav>
+	<!-- Hero -->
+	<section class="proj-hero">
+		<div class="proj-hero-bg">
+			<div class="proj-blob proj-blob-1"></div>
+			<div class="proj-blob proj-blob-2"></div>
+			<div class="proj-blob proj-blob-3"></div>
 		</div>
+		<div class="proj-hero-content">
+			<span class="pixelify-sans-regular proj-eyebrow">Course Project · OOP</span>
+			<h1 class="mea-culpa-regular proj-title">Sproutfolio</h1>
+			<p class="tinos-regular proj-tagline">A contact management system with a green thumb. Full CRUD functionality wrapped in a plant-inspired interface.</p>
+			<div class="proj-meta">
+				<div class="proj-meta-item">
+					<span class="pixelify-sans-regular proj-meta-label">Role</span>
+					<span class="tinos-regular proj-meta-value">Web Design · Frontend Dev</span>
+				</div>
+				<div class="proj-meta-divider"></div>
+				<div class="proj-meta-item">
+					<span class="pixelify-sans-regular proj-meta-label">Type</span>
+					<span class="tinos-regular proj-meta-value">Course Project</span>
+				</div>
+				<div class="proj-meta-divider"></div>
+				<div class="proj-meta-item">
+					<span class="pixelify-sans-regular proj-meta-label">Tools</span>
+					<span class="tinos-regular proj-meta-value">HTML · CSS · JavaScript</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Cover -->
+	<div class="proj-cover-banner">
+		<img src="images/projects/sprout-screen.png" alt="Sproutfolio interface">
 	</div>
-	<!-- END NAVIGATION -->
 
-	<!-- START HERO -->
-	<section id="hero" class="sprout-hero hero">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-2 col-sm-1"></div>
-				<div class="col-md-8 col-sm-10">
-					<h1 class="tm-home-title"><strong></strong></h1>
-					<h1 class="tm-home-subtitle sprout-darkgreen large-title">Sproutfolio</h1>
-					<p class="sprout-semidarkgreen">This project was completed for my Processes of Object-Oriented Software Development course. We were tasked with developing a contact management system implementing full CRUD functionality.</p>
+	<!-- Overview -->
+	<section class="proj-section" id="overview">
+		<div class="proj-inner">
+			<span class="pixelify-sans-regular proj-label">The Project</span>
+			<h2 class="mea-culpa-regular proj-section-title">What is Sproutfolio?</h2>
+			<p class="tinos-regular proj-body">Developed for my Processes of Object-Oriented Software Development course, Sproutfolio is a contact management system with full CRUD functionality. The theme puts a playful spin on a standard data management platform however, the contacts are framed as plants you tend to.</p>
+			<p class="tinos-regular proj-body">My focus was on web design and frontend development: translating the concept into a clean, functional interface with thoughtful UX for creating, reading, updating, and deleting records.</p>
+		</div>
+	</section>
+
+	<!-- Features -->
+	<section class="proj-section proj-alt" id="work">
+		<div class="proj-inner">
+			<span class="pixelify-sans-regular proj-label">What I Built</span>
+			<h2 class="mea-culpa-regular proj-section-title">Features.</h2>
+			<div class="proj-features">
+				<div class="proj-feature-card">
+					<h3 class="tinos-bold">Full CRUD Operations</h3>
+					<p class="tinos-regular">Users can create, view, update, and delete contacts. The full lifecycle of a record, implemented cleanly with vanilla JavaScript and a structured data model.</p>
 				</div>
-				<div class="col-md-2 col-sm-1"></div>
+				<div class="proj-feature-card">
+					<h3 class="tinos-bold">Search Functionality</h3>
+					<p class="tinos-regular">A real-time search bar lets users filter contacts instantly without a page reload, making it easy to find the right entry even as the list grows.</p>
+				</div>
+				<div class="proj-feature-card">
+					<h3 class="tinos-bold">Organizing Filters</h3>
+					<p class="tinos-regular">Contacts can be sorted and filtered by category, keeping the list manageable and giving users more control over how they view their data.</p>
+				</div>
+				<div class="proj-feature-card">
+					<h3 class="tinos-bold">UI Design</h3>
+					<p class="tinos-regular">Designed the full interface; palette, typography, layout to reflect the plant theme while keeping the experience clean and intuitive for a data-focused app.</p>
+				</div>
 			</div>
 		</div>
 	</section>
-	<!-- END HERO -->
-	<!-- MIDDLE SECTION -->
-	 <section id="middle" class="middle-section">
-		<div class="container">
-			<div class="col-md-6">
-				<div>
-					<h4 class="medium-title sprout-darkgreen">Solution</h4>
-					<ul class="list sprout-semidarkgreen">
-						<li>Create, Update, Read, Delete plant contacts</li>
-						<li>Searching feature</li>
-                        <li>Organizing filters</li>
-					</ul>
+
+	<!-- Contact -->
+	<section class="contact-section proj-contact" id="contact">
+		<div class="contact-inner">
+			<h2 class="mea-culpa-regular">Reach Out</h2>
+			<p class="tinos-regular contact-sub">Have a question about this project, or just want to connect?</p>
+			<form class="contact-form" action="https://formspree.io/f/mvzvbvzb" method="POST">
+				<div class="form-row">
+					<div class="form-group">
+						<label class="tinos-regular" for="sp-name">Name</label>
+						<input class="tinos-regular" type="text" id="sp-name" name="name" placeholder="Your name" required>
+					</div>
+					<div class="form-group">
+						<label class="tinos-regular" for="sp-email">Email</label>
+						<input class="tinos-regular" type="email" id="sp-email" name="email" placeholder="your@email.com" required>
+					</div>
 				</div>
-			</div>
-			<div class="col-md-6">
-				<img src="images/projects/sprout-screen.png" alt="screens and phone mockup of wanderlust app" class="mockup">
-			</div>
+				<div class="form-group">
+					<label class="tinos-regular" for="sp-message">Message</label>
+					<textarea class="tinos-regular" id="sp-message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+				</div>
+				<div class="form-submit">
+					<button type="submit" class="btn-outline pixelify-sans-regular proj-btn">send it</button>
+				</div>
+			</form>
 		</div>
-	 </section>
-	<!-- MIDDLE SECTION END -->
-	<!-- BOTTOM SECTION -->
-	<section id="bottom">
-		<h2 class="medium-title-2 sprout-darkgreen">Details</h2>
-		<div class="box-wrapper">
-			<div id="role" class="col detail-box sprout-background-box white">
-				<h3 class="title-bold-md">My Role</h3>
-				<ul class="btm-list">
-					<li>Web Design</li>
-					<li>Frontend Development</li>
-				</ul>
-			</div>
-			<div id="tool" class="col detail-box sprout-background-box white">
-				<h3 class="title-bold-md">Tools Used</h3>
-				<ul class="btm-list">
-					<li>VScode</li>
-					<li>HTML/CSS</li>
-                    <li>JavaScript</li>
-				</ul>
-			</div>
-		</div>
-		<!-- </div> -->
 	</section>
-	<!-- BOTTOM SECTION END -->
-</body> 
-<script src="js/scroll.js"></script>
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src="js/jquery.nav.js"></script>
-<script src="js/isotope.js"></script>
-<script src="js/imagesloaded.min.js"></script>
-<script src="js/custom.js"></script>
+
+	<script src="js/project.js"></script>
+</body>
 </html>
