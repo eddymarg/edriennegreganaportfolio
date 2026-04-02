@@ -52,23 +52,42 @@ const viewMoreBtn  = document.getElementById('view-more-btn');
 const viewLessBtn  = document.getElementById('view-less-btn');
 const moreProjects = document.getElementById('more-projects');
 
-viewMoreBtn.addEventListener('click', () => {
+function expandProjects() {
     moreProjects.classList.add('visible');
     viewMoreBtn.style.display = 'none';
     viewLessBtn.style.display = 'inline-block';
-
-    // Re-collect jello targets to include newly visible images
     jelloEls = [...document.querySelectorAll('.project-img:not(.mockup), .mockup-wrap')];
-});
+}
 
-viewLessBtn.addEventListener('click', () => {
+function collapseProjects() {
     moreProjects.classList.remove('visible');
     viewLessBtn.style.display = 'none';
     viewMoreBtn.style.display = 'inline-block';
-
-    // Scroll back up to the projects section
+    sessionStorage.removeItem('projectsExpanded');
     document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
-
-    // Trim jello targets back to only visible images
     jelloEls = [...document.querySelectorAll('.project-img:not(.mockup), .mockup-wrap')];
+}
+
+// Mark that user is leaving for a project page
+document.querySelectorAll('.projects-section .btn-outline').forEach(link => {
+    link.addEventListener('click', () => {
+        sessionStorage.setItem('returnToProjects', 'true');
+    });
 });
+
+// Restore expanded state and scroll to projects if returning from a project page
+if (sessionStorage.getItem('projectsExpanded') === 'true') {
+    expandProjects();
+}
+
+if (sessionStorage.getItem('returnToProjects') === 'true') {
+    sessionStorage.removeItem('returnToProjects');
+    document.getElementById('projects').scrollIntoView({ behavior: 'instant' });
+}
+
+viewMoreBtn.addEventListener('click', () => {
+    sessionStorage.setItem('projectsExpanded', 'true');
+    expandProjects();
+});
+
+viewLessBtn.addEventListener('click', collapseProjects);

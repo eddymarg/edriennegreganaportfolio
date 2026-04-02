@@ -238,6 +238,34 @@
     line-height: 1.8;
 }
 
+/* ── Early Drafts ── */
+.sb-drafts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    max-width: 1000px;
+    margin: 3rem auto 0;
+    padding: 0 2rem;
+}
+
+.sb-draft-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.sb-draft-item img {
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.09);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sb-draft-item img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.13);
+}
+
 /* ── Screens ── */
 .sb-screens-section {
     padding: 6rem 2rem;

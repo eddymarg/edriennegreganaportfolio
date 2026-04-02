@@ -232,6 +232,11 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.lb-work-grid .lb-work-card:nth-child(1) img,
+.lb-work-grid .lb-work-card:nth-child(2) img {
+    height: 400px;
+}
+
 .lb-work-card img:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 32px rgba(26, 92, 184, 0.16);
