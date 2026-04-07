@@ -285,3 +285,50 @@
 .arb-contact .form-group textarea:focus {
     border-bottom-color: var(--arb-green);
 }
+
+/* ── Mobile Responsive ── */
+@media (max-width: 768px) {
+    .arb-nav.nav-open .nav-links {
+        background: rgba(242, 245, 238, 0.97);
+    }
+
+    .arb-nav.scrolled.nav-open .nav-links {
+        background: rgba(90, 140, 82, 0.2);
+    }
+
+    .arb-title {
+        font-size: 2.5rem;
+    }
+
+    .arb-section-title {
+        font-size: 2rem;
+    }
+
+    .arb-two-col {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .arb-cover-wrap {
+        width: 100%;
+    }
+
+    .arb-cover-img {
+        height: 220px;
+    }
+
+    .arb-work-card,
+    .arb-work-card.arb-work-card-reverse {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .arb-work-card img {
+        width: 100%;
+        height: 220px;
+    }
+
+    .arb-single-photo img {
+        height: 220px;
+    }
+}
