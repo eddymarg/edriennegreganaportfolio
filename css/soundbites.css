@@ -315,3 +315,32 @@
 .sb-contact .form-group textarea:focus {
     border-bottom-color: var(--sb-coral);
 }
+
+/* ── Mobile Responsive ── */
+@media (max-width: 768px) {
+    .sb-nav.nav-open .nav-links {
+        background: rgba(253, 246, 239, 0.97);
+    }
+
+    .sb-nav.scrolled.nav-open .nav-links {
+        background: rgba(232, 122, 120, 0.2);
+    }
+
+    .sb-section-title {
+        font-size: 2rem;
+    }
+
+    .sb-process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sb-drafts-grid,
+    .sb-screens-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .sb-mockup-banner img {
+        width: 85%;
+    }
+}

@@ -2,6 +2,23 @@
 const navbar   = document.querySelector('.navbar');
 const hero     = document.querySelector('.hero');
 
+// ── Hamburger toggle ──
+const navToggle = document.querySelector('.nav-toggle');
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
+        const isOpen = navbar.classList.toggle('nav-open');
+        navToggle.classList.toggle('open', isOpen);
+        navToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navbar.classList.remove('nav-open');
+            navToggle.classList.remove('open');
+            navToggle.setAttribute('aria-expanded', 'false');
+        });
+    });
+}
+
 function updateNav() {
     if (window.scrollY > hero.offsetHeight - 80) {
         navbar.classList.add('scrolled');

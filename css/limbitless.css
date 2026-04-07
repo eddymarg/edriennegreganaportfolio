@@ -297,3 +297,56 @@
 .lb-contact .form-group textarea:focus {
     border-bottom-color: var(--lb-blue);
 }
+
+/* ── Mobile Responsive ── */
+@media (max-width: 768px) {
+    .lb-nav.nav-open .nav-links {
+        background: rgba(244, 248, 255, 0.97);
+    }
+
+    .lb-nav.scrolled.nav-open .nav-links {
+        background: rgba(58, 128, 210, 0.2);
+    }
+
+    .lb-title {
+        font-size: 2.5rem;
+    }
+
+    .lb-section-title {
+        font-size: 2rem;
+    }
+
+    .lb-two-col {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .lb-cover-wrap {
+        width: 100%;
+    }
+
+    .lb-work-card,
+    .lb-work-card.lb-work-card-reverse {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .lb-work-card img {
+        width: 100%;
+        height: 220px;
+    }
+
+    .lb-work-grid .lb-work-card:nth-child(1) img,
+    .lb-work-grid .lb-work-card:nth-child(2) img {
+        height: 260px;
+    }
+
+    .lb-photo-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .lb-photo {
+        height: 220px;
+    }
+}
